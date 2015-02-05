@@ -27,6 +27,14 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/createpost', {
+        templateUrl: 'views/createpost.html',
+        controller: 'CreatePostCtrl'
+      })
+      .when('/list_activity', {
+        templateUrl: 'views/list_activity.html',
+        controller: 'ListActivityCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
