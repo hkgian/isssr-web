@@ -1,0 +1,2656 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'grunt-contrib-imagemin',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.5.0
+3 info using node@v0.13.0-pre
+4 silly cache add args [ 'grunt-contrib-imagemin', null ]
+5 verbose cache add spec grunt-contrib-imagemin
+6 silly cache add parsed spec { raw: 'grunt-contrib-imagemin',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'grunt-contrib-imagemin',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed grunt-contrib-imagemin@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'grunt-contrib-imagemin', range: '*', hasData: false }
+11 silly mapToRegistry name grunt-contrib-imagemin
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-imagemin
+15 verbose addNameRange registry:https://registry.npmjs.org/grunt-contrib-imagemin not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/grunt-contrib-imagemin
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 14:20:55
+19 verbose request id 6d3f45e3cf7631fb
+20 verbose etag "2Y423RM86JIPH39KYLL1VU4RY"
+21 http request GET https://registry.npmjs.org/grunt-contrib-imagemin
+22 http 304 https://registry.npmjs.org/grunt-contrib-imagemin
+23 silly get cb [ 304,
+23 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+23 silly get     server: 'Apache',
+23 silly get     via: '1.1 varnish',
+23 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:56 GMT',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     etag: '"2Y423RM86JIPH39KYLL1VU4RY"',
+23 silly get     age: '27',
+23 silly get     'x-served-by': 'cache-fra1227-FRA',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1423574456.124494,VS0,VE0',
+23 silly get     vary: 'Accept',
+23 silly get     'content-length': '0',
+23 silly get     'keep-alive': 'timeout=10, max=50',
+23 silly get     connection: 'Keep-Alive' } ]
+24 verbose etag https://registry.npmjs.org/grunt-contrib-imagemin from cache
+25 verbose get saving grunt-contrib-imagemin to /home/john/.npm/registry.npmjs.org/grunt-contrib-imagemin/.cache.json
+26 silly addNameRange number 2 { name: 'grunt-contrib-imagemin', range: '*', hasData: true }
+27 silly addNameRange versions [ 'grunt-contrib-imagemin',
+27 silly addNameRange   [ '0.1.0',
+27 silly addNameRange     '0.1.1',
+27 silly addNameRange     '0.1.2',
+27 silly addNameRange     '0.1.3',
+27 silly addNameRange     '0.1.4',
+27 silly addNameRange     '0.1.1-rc7',
+27 silly addNameRange     '0.1.1-rc8',
+27 silly addNameRange     '0.2.0',
+27 silly addNameRange     '0.2.1',
+27 silly addNameRange     '0.3.0',
+27 silly addNameRange     '0.4.0',
+27 silly addNameRange     '0.4.1',
+27 silly addNameRange     '0.5.0',
+27 silly addNameRange     '0.6.0',
+27 silly addNameRange     '0.6.1',
+27 silly addNameRange     '0.7.0',
+27 silly addNameRange     '0.7.1',
+27 silly addNameRange     '0.7.2',
+27 silly addNameRange     '0.8.0',
+27 silly addNameRange     '0.8.1',
+27 silly addNameRange     '0.9.0',
+27 silly addNameRange     '0.9.1',
+27 silly addNameRange     '0.9.2' ] ]
+28 verbose addNamed grunt-contrib-imagemin@0.9.2
+29 silly addNamed semver.valid 0.9.2
+30 silly addNamed semver.validRange 0.9.2
+31 silly cache afterAdd grunt-contrib-imagemin@0.9.2
+32 verbose afterAdd /home/john/.npm/grunt-contrib-imagemin/0.9.2/package/package.json not in flight; writing
+33 verbose afterAdd /home/john/.npm/grunt-contrib-imagemin/0.9.2/package/package.json written
+34 silly install resolved [ { name: 'grunt-contrib-imagemin',
+34 silly install resolved     description: 'Minify images',
+34 silly install resolved     version: '0.9.2',
+34 silly install resolved     author: { name: 'Grunt Team', url: 'http://gruntjs.com/' },
+34 silly install resolved     repository:
+34 silly install resolved      { type: 'git',
+34 silly install resolved        url: 'https://github.com/gruntjs/grunt-contrib-imagemin' },
+34 silly install resolved     licenses: [ [Object] ],
+34 silly install resolved     engines: { node: '>=0.10.0' },
+34 silly install resolved     scripts: { test: 'grunt test' },
+34 silly install resolved     dependencies:
+34 silly install resolved      { async: '^0.9.0',
+34 silly install resolved        chalk: '^0.5.1',
+34 silly install resolved        imagemin: '^3.0.0',
+34 silly install resolved        'pretty-bytes': '^1.0.1' },
+34 silly install resolved     devDependencies:
+34 silly install resolved      { grunt: '^0.4.5',
+34 silly install resolved        'grunt-contrib-clean': '^0.6.0',
+34 silly install resolved        'grunt-contrib-internal': '^0.4.10',
+34 silly install resolved        'grunt-contrib-jshint': '^0.10.0',
+34 silly install resolved        'grunt-contrib-nodeunit': '^0.4.1',
+34 silly install resolved        'time-grunt': '^1.0.0' },
+34 silly install resolved     peerDependencies: { grunt: '~0.4.0' },
+34 silly install resolved     keywords:
+34 silly install resolved      [ 'gruntplugin',
+34 silly install resolved        'compress',
+34 silly install resolved        'gif',
+34 silly install resolved        'image',
+34 silly install resolved        'img',
+34 silly install resolved        'jpeg',
+34 silly install resolved        'jpg',
+34 silly install resolved        'minify',
+34 silly install resolved        'png',
+34 silly install resolved        'svg' ],
+34 silly install resolved     files: [ 'tasks', 'LICENSE-MIT' ],
+34 silly install resolved     contributors:
+34 silly install resolved      [ [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object] ],
+34 silly install resolved     gitHead: '2963e91a83de9e525b0c650c675105298e636666',
+34 silly install resolved     bugs: { url: 'https://github.com/gruntjs/grunt-contrib-imagemin/issues' },
+34 silly install resolved     homepage: 'https://github.com/gruntjs/grunt-contrib-imagemin',
+34 silly install resolved     _id: 'grunt-contrib-imagemin@0.9.2',
+34 silly install resolved     _shasum: '3d3dffb516f9b5e33199a376becae7bc0343c9c3',
+34 silly install resolved     _from: 'grunt-contrib-imagemin@*',
+34 silly install resolved     _npmVersion: '2.1.7',
+34 silly install resolved     _nodeVersion: '0.10.32',
+34 silly install resolved     _npmUser: { name: 'kevva', email: 'kevinmartensson@gmail.com' },
+34 silly install resolved     maintainers:
+34 silly install resolved      [ [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object],
+34 silly install resolved        [Object] ],
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: '3d3dffb516f9b5e33199a376becae7bc0343c9c3',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/grunt-contrib-imagemin/-/grunt-contrib-imagemin-0.9.2.tgz' },
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-contrib-imagemin/-/grunt-contrib-imagemin-0.9.2.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install grunt-contrib-imagemin@0.9.2 into /usr/local/lib
+36 info installOne grunt-contrib-imagemin@0.9.2
+37 verbose installOne of grunt-contrib-imagemin to /usr/local/lib not in flight; installing
+38 verbose lock using /home/john/.npm/_locks/grunt-contrib-imagemin-9efe377292e5480c.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin
+39 warn engine grunt-contrib-imagemin@0.9.2: wanted: {"node":">=0.10.0"} (current: {"node":"0.13.0-pre","npm":"2.5.0"})
+40 silly install write writing grunt-contrib-imagemin 0.9.2 to /usr/local/lib/node_modules/grunt-contrib-imagemin
+41 silly cache addNamed cb grunt-contrib-imagemin@0.9.2
+42 verbose unbuild lib/node_modules/grunt-contrib-imagemin
+43 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin
+44 verbose tar unpack /home/john/.npm/grunt-contrib-imagemin/0.9.2/package.tgz
+45 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin
+46 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin
+47 silly gunzTarPerm modes [ '755', '644' ]
+48 silly gunzTarPerm extractEntry package.json
+49 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+50 silly gunzTarPerm extractEntry README.md
+51 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+52 silly gunzTarPerm extractEntry CHANGELOG
+53 silly gunzTarPerm modified mode [ 'CHANGELOG', 436, 420 ]
+54 silly gunzTarPerm extractEntry LICENSE-MIT
+55 silly gunzTarPerm modified mode [ 'LICENSE-MIT', 436, 420 ]
+56 silly gunzTarPerm extractEntry tasks/imagemin.js
+57 silly gunzTarPerm modified mode [ 'tasks/imagemin.js', 436, 420 ]
+58 info preinstall grunt-contrib-imagemin@0.9.2
+59 silly prepareForInstallMany adding async@^0.9.0 from grunt-contrib-imagemin dependencies
+60 silly prepareForInstallMany adding chalk@^0.5.1 from grunt-contrib-imagemin dependencies
+61 silly prepareForInstallMany adding imagemin@^3.0.0 from grunt-contrib-imagemin dependencies
+62 silly prepareForInstallMany adding pretty-bytes@^1.0.1 from grunt-contrib-imagemin dependencies
+63 silly prepareForInstallMany adding grunt@~0.4.0 from grunt-contrib-imagemin peerDependencies
+64 silly cache add args [ 'async@^0.9.0', null ]
+65 verbose cache add spec async@^0.9.0
+66 silly cache add args [ 'chalk@^0.5.1', null ]
+67 verbose cache add spec chalk@^0.5.1
+68 silly cache add parsed spec { raw: 'async@^0.9.0',
+68 silly cache add   scope: null,
+68 silly cache add   name: 'async',
+68 silly cache add   rawSpec: '^0.9.0',
+68 silly cache add   spec: '>=0.9.0 <0.10.0',
+68 silly cache add   type: 'range' }
+69 verbose addNamed async@>=0.9.0 <0.10.0
+70 silly addNamed semver.valid null
+71 silly addNamed semver.validRange >=0.9.0 <0.10.0
+72 silly addNameRange { name: 'async', range: '>=0.9.0 <0.10.0', hasData: false }
+73 silly mapToRegistry name async
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry uri https://registry.npmjs.org/async
+77 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
+78 silly cache add parsed spec { raw: 'chalk@^0.5.1',
+78 silly cache add   scope: null,
+78 silly cache add   name: 'chalk',
+78 silly cache add   rawSpec: '^0.5.1',
+78 silly cache add   spec: '>=0.5.1 <0.6.0',
+78 silly cache add   type: 'range' }
+79 verbose addNamed chalk@>=0.5.1 <0.6.0
+80 silly addNamed semver.valid null
+81 silly addNamed semver.validRange >=0.5.1 <0.6.0
+82 silly addNameRange { name: 'chalk', range: '>=0.5.1 <0.6.0', hasData: false }
+83 silly mapToRegistry name chalk
+84 silly mapToRegistry using default registry
+85 silly mapToRegistry registry https://registry.npmjs.org/
+86 silly mapToRegistry uri https://registry.npmjs.org/chalk
+87 verbose addNameRange registry:https://registry.npmjs.org/chalk not in flight; fetching
+88 silly cache add args [ 'imagemin@^3.0.0', null ]
+89 verbose cache add spec imagemin@^3.0.0
+90 silly cache add parsed spec { raw: 'imagemin@^3.0.0',
+90 silly cache add   scope: null,
+90 silly cache add   name: 'imagemin',
+90 silly cache add   rawSpec: '^3.0.0',
+90 silly cache add   spec: '>=3.0.0 <4.0.0',
+90 silly cache add   type: 'range' }
+91 verbose addNamed imagemin@>=3.0.0 <4.0.0
+92 silly addNamed semver.valid null
+93 silly addNamed semver.validRange >=3.0.0 <4.0.0
+94 silly addNameRange { name: 'imagemin', range: '>=3.0.0 <4.0.0', hasData: false }
+95 silly mapToRegistry name imagemin
+96 silly mapToRegistry using default registry
+97 silly mapToRegistry registry https://registry.npmjs.org/
+98 silly mapToRegistry uri https://registry.npmjs.org/imagemin
+99 verbose addNameRange registry:https://registry.npmjs.org/imagemin not in flight; fetching
+100 silly cache add args [ 'pretty-bytes@^1.0.1', null ]
+101 verbose cache add spec pretty-bytes@^1.0.1
+102 silly cache add parsed spec { raw: 'pretty-bytes@^1.0.1',
+102 silly cache add   scope: null,
+102 silly cache add   name: 'pretty-bytes',
+102 silly cache add   rawSpec: '^1.0.1',
+102 silly cache add   spec: '>=1.0.1 <2.0.0',
+102 silly cache add   type: 'range' }
+103 verbose addNamed pretty-bytes@>=1.0.1 <2.0.0
+104 silly addNamed semver.valid null
+105 silly addNamed semver.validRange >=1.0.1 <2.0.0
+106 silly addNameRange { name: 'pretty-bytes', range: '>=1.0.1 <2.0.0', hasData: false }
+107 silly mapToRegistry name pretty-bytes
+108 silly mapToRegistry using default registry
+109 silly mapToRegistry registry https://registry.npmjs.org/
+110 silly mapToRegistry uri https://registry.npmjs.org/pretty-bytes
+111 verbose addNameRange registry:https://registry.npmjs.org/pretty-bytes not in flight; fetching
+112 verbose request uri https://registry.npmjs.org/async
+113 verbose request no auth needed
+114 info attempt registry request try #1 at 14:20:56
+115 verbose etag "C76SHMBHDPM5JF6GWBCZ1MZEN"
+116 http request GET https://registry.npmjs.org/async
+117 verbose request uri https://registry.npmjs.org/pretty-bytes
+118 verbose request no auth needed
+119 info attempt registry request try #1 at 14:20:56
+120 verbose etag "832UOZ0MZO02UWCS4AFJ00CYG"
+121 http request GET https://registry.npmjs.org/pretty-bytes
+122 verbose request uri https://registry.npmjs.org/chalk
+123 verbose request no auth needed
+124 info attempt registry request try #1 at 14:20:56
+125 verbose etag "8VAUGAQ89CCI8J0OIVEDMM987"
+126 http request GET https://registry.npmjs.org/chalk
+127 verbose request uri https://registry.npmjs.org/imagemin
+128 verbose request no auth needed
+129 info attempt registry request try #1 at 14:20:56
+130 verbose etag "863DUUGG3I36VM5CT13QWXLJ1"
+131 http request GET https://registry.npmjs.org/imagemin
+132 http 304 https://registry.npmjs.org/async
+133 silly get cb [ 304,
+133 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+133 silly get     server: 'Apache',
+133 silly get     via: '1.1 varnish',
+133 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:42 GMT',
+133 silly get     'cache-control': 'max-age=60',
+133 silly get     etag: '"C76SHMBHDPM5JF6GWBCZ1MZEN"',
+133 silly get     age: '29',
+133 silly get     'x-served-by': 'cache-fra1241-FRA',
+133 silly get     'x-cache': 'HIT',
+133 silly get     'x-cache-hits': '4',
+133 silly get     'x-timer': 'S1423574456.425043,VS0,VE0',
+133 silly get     vary: 'Accept',
+133 silly get     'content-length': '0',
+133 silly get     'keep-alive': 'timeout=10, max=50',
+133 silly get     connection: 'Keep-Alive' } ]
+134 verbose etag https://registry.npmjs.org/async from cache
+135 verbose get saving async to /home/john/.npm/registry.npmjs.org/async/.cache.json
+136 http 304 https://registry.npmjs.org/pretty-bytes
+137 silly get cb [ 304,
+137 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+137 silly get     server: 'Apache',
+137 silly get     via: '1.1 varnish',
+137 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:30 GMT',
+137 silly get     'cache-control': 'max-age=60',
+137 silly get     etag: '"832UOZ0MZO02UWCS4AFJ00CYG"',
+137 silly get     age: '52',
+137 silly get     'x-served-by': 'cache-fra1243-FRA',
+137 silly get     'x-cache': 'HIT',
+137 silly get     'x-cache-hits': '2',
+137 silly get     'x-timer': 'S1423574456.427429,VS0,VE0',
+137 silly get     vary: 'Accept',
+137 silly get     'content-length': '0',
+137 silly get     'keep-alive': 'timeout=10, max=50',
+137 silly get     connection: 'Keep-Alive' } ]
+138 verbose etag https://registry.npmjs.org/pretty-bytes from cache
+139 verbose get saving pretty-bytes to /home/john/.npm/registry.npmjs.org/pretty-bytes/.cache.json
+140 http 304 https://registry.npmjs.org/chalk
+141 silly get cb [ 304,
+141 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+141 silly get     server: 'Apache',
+141 silly get     via: '1.1 varnish',
+141 silly get     'last-modified': 'Tue, 10 Feb 2015 13:19:10 GMT',
+141 silly get     'cache-control': 'max-age=60',
+141 silly get     etag: '"8VAUGAQ89CCI8J0OIVEDMM987"',
+141 silly get     age: '45',
+141 silly get     'x-served-by': 'cache-fra1232-FRA',
+141 silly get     'x-cache': 'HIT',
+141 silly get     'x-cache-hits': '58',
+141 silly get     'x-timer': 'S1423574456.432259,VS0,VE0',
+141 silly get     vary: 'Accept',
+141 silly get     'content-length': '0',
+141 silly get     'keep-alive': 'timeout=10, max=50',
+141 silly get     connection: 'Keep-Alive' } ]
+142 verbose etag https://registry.npmjs.org/chalk from cache
+143 verbose get saving chalk to /home/john/.npm/registry.npmjs.org/chalk/.cache.json
+144 http 304 https://registry.npmjs.org/imagemin
+145 silly get cb [ 304,
+145 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+145 silly get     server: 'Apache',
+145 silly get     via: '1.1 varnish',
+145 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:56 GMT',
+145 silly get     'cache-control': 'max-age=60',
+145 silly get     etag: '"863DUUGG3I36VM5CT13QWXLJ1"',
+145 silly get     age: '25',
+145 silly get     'x-served-by': 'cache-fra1226-FRA',
+145 silly get     'x-cache': 'HIT',
+145 silly get     'x-cache-hits': '1',
+145 silly get     'x-timer': 'S1423574456.432721,VS0,VE0',
+145 silly get     vary: 'Accept',
+145 silly get     'content-length': '0',
+145 silly get     'keep-alive': 'timeout=10, max=50',
+145 silly get     connection: 'Keep-Alive' } ]
+146 verbose etag https://registry.npmjs.org/imagemin from cache
+147 verbose get saving imagemin to /home/john/.npm/registry.npmjs.org/imagemin/.cache.json
+148 silly addNameRange number 2 { name: 'chalk', range: '>=0.5.1 <0.6.0', hasData: true }
+149 silly addNameRange versions [ 'chalk',
+149 silly addNameRange   [ '0.1.0',
+149 silly addNameRange     '0.1.1',
+149 silly addNameRange     '0.2.0',
+149 silly addNameRange     '0.2.1',
+149 silly addNameRange     '0.3.0',
+149 silly addNameRange     '0.4.0',
+149 silly addNameRange     '0.5.0',
+149 silly addNameRange     '0.5.1' ] ]
+150 verbose addNamed chalk@0.5.1
+151 silly addNamed semver.valid 0.5.1
+152 silly addNamed semver.validRange 0.5.1
+153 silly addNameRange number 2 { name: 'pretty-bytes', range: '>=1.0.1 <2.0.0', hasData: true }
+154 silly addNameRange versions [ 'pretty-bytes',
+154 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '1.0.0', '1.0.1', '1.0.2' ] ]
+155 verbose addNamed pretty-bytes@1.0.2
+156 silly addNamed semver.valid 1.0.2
+157 silly addNamed semver.validRange 1.0.2
+158 silly addNameRange number 2 { name: 'async', range: '>=0.9.0 <0.10.0', hasData: true }
+159 silly addNameRange versions [ 'async',
+159 silly addNameRange   [ '0.1.0',
+159 silly addNameRange     '0.1.1',
+159 silly addNameRange     '0.1.2',
+159 silly addNameRange     '0.1.3',
+159 silly addNameRange     '0.1.4',
+159 silly addNameRange     '0.1.5',
+159 silly addNameRange     '0.1.6',
+159 silly addNameRange     '0.1.7',
+159 silly addNameRange     '0.1.8',
+159 silly addNameRange     '0.1.9',
+159 silly addNameRange     '0.1.10',
+159 silly addNameRange     '0.1.11',
+159 silly addNameRange     '0.1.12',
+159 silly addNameRange     '0.1.13',
+159 silly addNameRange     '0.1.14',
+159 silly addNameRange     '0.1.15',
+159 silly addNameRange     '0.1.16',
+159 silly addNameRange     '0.1.17',
+159 silly addNameRange     '0.1.18',
+159 silly addNameRange     '0.1.19',
+159 silly addNameRange     '0.1.20',
+159 silly addNameRange     '0.1.21',
+159 silly addNameRange     '0.1.22',
+159 silly addNameRange     '0.2.0',
+159 silly addNameRange     '0.2.1',
+159 silly addNameRange     '0.2.2',
+159 silly addNameRange     '0.2.3',
+159 silly addNameRange     '0.2.4',
+159 silly addNameRange     '0.2.5',
+159 silly addNameRange     '0.2.6',
+159 silly addNameRange     '0.2.7',
+159 silly addNameRange     '0.2.8',
+159 silly addNameRange     '0.2.9',
+159 silly addNameRange     '0.2.10',
+159 silly addNameRange     '0.3.0',
+159 silly addNameRange     '0.4.0',
+159 silly addNameRange     '0.4.1',
+159 silly addNameRange     '0.5.0',
+159 silly addNameRange     '0.6.0',
+159 silly addNameRange     '0.6.1',
+159 silly addNameRange     '0.6.2',
+159 silly addNameRange     '0.7.0',
+159 silly addNameRange     '0.8.0',
+159 silly addNameRange     '0.9.0' ] ]
+160 verbose addNamed async@0.9.0
+161 silly addNamed semver.valid 0.9.0
+162 silly addNamed semver.validRange 0.9.0
+163 silly addNameRange number 2 { name: 'imagemin', range: '>=3.0.0 <4.0.0', hasData: true }
+164 silly addNameRange versions [ 'imagemin',
+164 silly addNameRange   [ '0.1.0',
+164 silly addNameRange     '0.1.1',
+164 silly addNameRange     '0.1.2',
+164 silly addNameRange     '0.1.3',
+164 silly addNameRange     '0.4.5',
+164 silly addNameRange     '0.4.6',
+164 silly addNameRange     '0.4.7',
+164 silly addNameRange     '0.4.8',
+164 silly addNameRange     '0.4.9',
+164 silly addNameRange     '1.0.0',
+164 silly addNameRange     '1.0.1',
+164 silly addNameRange     '1.0.2',
+164 silly addNameRange     '1.0.3',
+164 silly addNameRange     '1.0.4',
+164 silly addNameRange     '0.2.4',
+164 silly addNameRange     '1.0.5',
+164 silly addNameRange     '2.0.0',
+164 silly addNameRange     '2.0.1',
+164 silly addNameRange     '2.1.0',
+164 silly addNameRange     '2.1.1',
+164 silly addNameRange     '2.1.2',
+164 silly addNameRange     '2.2.0',
+164 silly addNameRange     '2.2.1',
+164 silly addNameRange     '3.0.0',
+164 silly addNameRange     '3.1.0' ] ]
+165 verbose addNamed imagemin@3.1.0
+166 silly addNamed semver.valid 3.1.0
+167 silly addNamed semver.validRange 3.1.0
+168 silly cache afterAdd chalk@0.5.1
+169 verbose afterAdd /home/john/.npm/chalk/0.5.1/package/package.json not in flight; writing
+170 silly cache afterAdd pretty-bytes@1.0.2
+171 verbose afterAdd /home/john/.npm/pretty-bytes/1.0.2/package/package.json not in flight; writing
+172 silly cache afterAdd async@0.9.0
+173 verbose afterAdd /home/john/.npm/async/0.9.0/package/package.json not in flight; writing
+174 silly cache afterAdd imagemin@3.1.0
+175 verbose afterAdd /home/john/.npm/imagemin/3.1.0/package/package.json not in flight; writing
+176 verbose afterAdd /home/john/.npm/chalk/0.5.1/package/package.json written
+177 verbose afterAdd /home/john/.npm/async/0.9.0/package/package.json written
+178 verbose afterAdd /home/john/.npm/pretty-bytes/1.0.2/package/package.json written
+179 verbose afterAdd /home/john/.npm/imagemin/3.1.0/package/package.json written
+180 silly install resolved [ { name: 'chalk',
+180 silly install resolved     version: '0.5.1',
+180 silly install resolved     description: 'Terminal string styling done right. Created because the `colors` module does some really horrible things.',
+180 silly install resolved     license: 'MIT',
+180 silly install resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/chalk' },
+180 silly install resolved     maintainers: [ [Object], [Object] ],
+180 silly install resolved     engines: { node: '>=0.10.0' },
+180 silly install resolved     scripts: { test: 'mocha', bench: 'matcha benchmark.js' },
+180 silly install resolved     files: [ 'index.js' ],
+180 silly install resolved     keywords:
+180 silly install resolved      [ 'color',
+180 silly install resolved        'colour',
+180 silly install resolved        'colors',
+180 silly install resolved        'terminal',
+180 silly install resolved        'console',
+180 silly install resolved        'cli',
+180 silly install resolved        'string',
+180 silly install resolved        'ansi',
+180 silly install resolved        'styles',
+180 silly install resolved        'tty',
+180 silly install resolved        'formatting',
+180 silly install resolved        'rgb',
+180 silly install resolved        '256',
+180 silly install resolved        'shell',
+180 silly install resolved        'xterm',
+180 silly install resolved        'log',
+180 silly install resolved        'logging',
+180 silly install resolved        'command-line',
+180 silly install resolved        'text' ],
+180 silly install resolved     dependencies:
+180 silly install resolved      { 'ansi-styles': '^1.1.0',
+180 silly install resolved        'escape-string-regexp': '^1.0.0',
+180 silly install resolved        'has-ansi': '^0.1.0',
+180 silly install resolved        'strip-ansi': '^0.3.0',
+180 silly install resolved        'supports-color': '^0.2.0' },
+180 silly install resolved     devDependencies: { matcha: '^0.5.0', mocha: '*' },
+180 silly install resolved     gitHead: '994758f01293f1fdcf63282e9917cb9f2cfbdaac',
+180 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/chalk/issues' },
+180 silly install resolved     homepage: 'https://github.com/sindresorhus/chalk',
+180 silly install resolved     _id: 'chalk@0.5.1',
+180 silly install resolved     _shasum: '663b3a648b68b55d04690d49167aa837858f2174',
+180 silly install resolved     _from: 'chalk@>=0.5.1 <0.6.0',
+180 silly install resolved     _npmVersion: '1.4.14',
+180 silly install resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+180 silly install resolved     dist:
+180 silly install resolved      { shasum: '663b3a648b68b55d04690d49167aa837858f2174',
+180 silly install resolved        tarball: 'http://registry.npmjs.org/chalk/-/chalk-0.5.1.tgz' },
+180 silly install resolved     directories: {},
+180 silly install resolved     _resolved: 'https://registry.npmjs.org/chalk/-/chalk-0.5.1.tgz',
+180 silly install resolved     readme: 'ERROR: No README data found!' },
+180 silly install resolved   { name: 'async',
+180 silly install resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+180 silly install resolved     main: './lib/async',
+180 silly install resolved     author: { name: 'Caolan McMahon' },
+180 silly install resolved     version: '0.9.0',
+180 silly install resolved     repository: { type: 'git', url: 'https://github.com/caolan/async.git' },
+180 silly install resolved     bugs: { url: 'https://github.com/caolan/async/issues' },
+180 silly install resolved     licenses: [ [Object] ],
+180 silly install resolved     devDependencies: { nodeunit: '>0.0.0', 'uglify-js': '1.2.x', nodelint: '>0.0.0' },
+180 silly install resolved     jam: { main: 'lib/async.js', include: [Object] },
+180 silly install resolved     scripts: { test: 'nodeunit test/test-async.js' },
+180 silly install resolved     homepage: 'https://github.com/caolan/async',
+180 silly install resolved     _id: 'async@0.9.0',
+180 silly install resolved     dist:
+180 silly install resolved      { shasum: 'ac3613b1da9bed1b47510bb4651b8931e47146c7',
+180 silly install resolved        tarball: 'http://registry.npmjs.org/async/-/async-0.9.0.tgz' },
+180 silly install resolved     _from: 'async@>=0.9.0 <0.10.0',
+180 silly install resolved     _npmVersion: '1.4.3',
+180 silly install resolved     _npmUser: { name: 'caolan', email: 'caolan.mcmahon@gmail.com' },
+180 silly install resolved     maintainers: [ [Object] ],
+180 silly install resolved     directories: {},
+180 silly install resolved     _shasum: 'ac3613b1da9bed1b47510bb4651b8931e47146c7',
+180 silly install resolved     _resolved: 'https://registry.npmjs.org/async/-/async-0.9.0.tgz',
+180 silly install resolved     readme: 'ERROR: No README data found!' },
+180 silly install resolved   { name: 'pretty-bytes',
+180 silly install resolved     version: '1.0.2',
+180 silly install resolved     description: 'Convert bytes to a human readable string: 1337 → 1.34 kB',
+180 silly install resolved     license: 'MIT',
+180 silly install resolved     repository:
+180 silly install resolved      { type: 'git',
+180 silly install resolved        url: 'https://github.com/sindresorhus/pretty-bytes' },
+180 silly install resolved     main: 'pretty-bytes.js',
+180 silly install resolved     bin: { 'pretty-bytes': 'cli.js' },
+180 silly install resolved     author:
+180 silly install resolved      { name: 'Sindre Sorhus',
+180 silly install resolved        email: 'sindresorhus@gmail.com',
+180 silly install resolved        url: 'http://sindresorhus.com' },
+180 silly install resolved     engines: { node: '>=0.10.0' },
+180 silly install resolved     scripts: { test: 'mocha' },
+180 silly install resolved     files: [ 'pretty-bytes.js', 'cli.js' ],
+180 silly install resolved     keywords:
+180 silly install resolved      [ 'cli',
+180 silly install resolved        'bin',
+180 silly install resolved        'browser',
+180 silly install resolved        'pretty',
+180 silly install resolved        'bytes',
+180 silly install resolved        'byte',
+180 silly install resolved        'filesize',
+180 silly install resolved        'size',
+180 silly install resolved        'file',
+180 silly install resolved        'human',
+180 silly install resolved        'humanized',
+180 silly install resolved        'readable',
+180 silly install resolved        'si',
+180 silly install resolved        'data' ],
+180 silly install resolved     dependencies: { 'get-stdin': '^1.0.0' },
+180 silly install resolved     devDependencies: { mocha: '*' },
+180 silly install resolved     gitHead: 'c5be24e2b88b90c481cc5c94626b04a9d2fd03ff',
+180 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/pretty-bytes/issues' },
+180 silly install resolved     homepage: 'https://github.com/sindresorhus/pretty-bytes',
+180 silly install resolved     _id: 'pretty-bytes@1.0.2',
+180 silly install resolved     _shasum: 'b38f90c0b93d9942a4c4bec6cb5f367d51d80120',
+180 silly install resolved     _from: 'pretty-bytes@>=1.0.1 <2.0.0',
+180 silly install resolved     _npmVersion: '2.1.5',
+180 silly install resolved     _nodeVersion: '0.10.32',
+180 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+180 silly install resolved     maintainers: [ [Object] ],
+180 silly install resolved     dist:
+180 silly install resolved      { shasum: 'b38f90c0b93d9942a4c4bec6cb5f367d51d80120',
+180 silly install resolved        tarball: 'http://registry.npmjs.org/pretty-bytes/-/pretty-bytes-1.0.2.tgz' },
+180 silly install resolved     directories: {},
+180 silly install resolved     _resolved: 'https://registry.npmjs.org/pretty-bytes/-/pretty-bytes-1.0.2.tgz',
+180 silly install resolved     readme: 'ERROR: No README data found!' },
+180 silly install resolved   { name: 'imagemin',
+180 silly install resolved     version: '3.1.0',
+180 silly install resolved     description: 'Minify images',
+180 silly install resolved     license: 'MIT',
+180 silly install resolved     repository: { type: 'git', url: 'https://github.com/imagemin/imagemin' },
+180 silly install resolved     author:
+180 silly install resolved      { name: 'Kevin Mårtensson',
+180 silly install resolved        email: 'kevinmartensson@gmail.com',
+180 silly install resolved        url: 'https://github.com/kevva' },
+180 silly install resolved     engines: { node: '>=0.10.0', npm: '>=2.1.5' },
+180 silly install resolved     bin: { imagemin: 'cli.js' },
+180 silly install resolved     scripts: { test: 'node test/test.js' },
+180 silly install resolved     files: [ 'cli.js', 'index.js' ],
+180 silly install resolved     keywords: [ 'compress', 'gif', 'image', 'jpeg', 'minify', 'png', 'svg' ],
+180 silly install resolved     dependencies:
+180 silly install resolved      { 'concat-stream': '^1.4.6',
+180 silly install resolved        'get-stdin': '^3.0.0',
+180 silly install resolved        meow: '^2.0.0',
+180 silly install resolved        optional: '^0.1.0',
+180 silly install resolved        'stream-combiner': '^0.2.1',
+180 silly install resolved        through2: '^0.6.1',
+180 silly install resolved        vinyl: '^0.4.3',
+180 silly install resolved        'vinyl-fs': '^0.3.7',
+180 silly install resolved        'imagemin-gifsicle': '^4.0.0',
+180 silly install resolved        'imagemin-jpegtran': '^4.0.0',
+180 silly install resolved        'imagemin-optipng': '^4.0.0',
+180 silly install resolved        'imagemin-pngquant': '^4.0.0',
+180 silly install resolved        'imagemin-svgo': '^4.0.0' },
+180 silly install resolved     devDependencies: { ava: '^0.0.4' },
+180 silly install resolved     optionalDependencies:
+180 silly install resolved      { 'imagemin-gifsicle': '^4.0.0',
+180 silly install resolved        'imagemin-jpegtran': '^4.0.0',
+180 silly install resolved        'imagemin-optipng': '^4.0.0',
+180 silly install resolved        'imagemin-pngquant': '^4.0.0',
+180 silly install resolved        'imagemin-svgo': '^4.0.0' },
+180 silly install resolved     gitHead: 'e4a66d12f24f11f46c300ccb0f6da48d950af4e3',
+180 silly install resolved     bugs: { url: 'https://github.com/imagemin/imagemin/issues' },
+180 silly install resolved     homepage: 'https://github.com/imagemin/imagemin',
+180 silly install resolved     _id: 'imagemin@3.1.0',
+180 silly install resolved     _shasum: '6f3f094612e48be9139939dbd1968b116749e3d5',
+180 silly install resolved     _from: 'imagemin@>=3.0.0 <4.0.0',
+180 silly install resolved     _npmVersion: '2.1.7',
+180 silly install resolved     _nodeVersion: '0.10.32',
+180 silly install resolved     _npmUser: { name: 'kevva', email: 'kevinmartensson@gmail.com' },
+180 silly install resolved     maintainers: [ [Object], [Object] ],
+180 silly install resolved     dist:
+180 silly install resolved      { shasum: '6f3f094612e48be9139939dbd1968b116749e3d5',
+180 silly install resolved        tarball: 'http://registry.npmjs.org/imagemin/-/imagemin-3.1.0.tgz' },
+180 silly install resolved     directories: {},
+180 silly install resolved     _resolved: 'https://registry.npmjs.org/imagemin/-/imagemin-3.1.0.tgz',
+180 silly install resolved     readme: 'ERROR: No README data found!' } ]
+181 info install chalk@0.5.1 into /usr/local/lib/node_modules/grunt-contrib-imagemin
+182 info install async@0.9.0 into /usr/local/lib/node_modules/grunt-contrib-imagemin
+183 info install pretty-bytes@1.0.2 into /usr/local/lib/node_modules/grunt-contrib-imagemin
+184 info install imagemin@3.1.0 into /usr/local/lib/node_modules/grunt-contrib-imagemin
+185 info installOne chalk@0.5.1
+186 verbose installOne of chalk to /usr/local/lib/node_modules/grunt-contrib-imagemin not in flight; installing
+187 info installOne async@0.9.0
+188 verbose installOne of async to /usr/local/lib/node_modules/grunt-contrib-imagemin not in flight; installing
+189 info installOne pretty-bytes@1.0.2
+190 verbose installOne of pretty-bytes to /usr/local/lib/node_modules/grunt-contrib-imagemin not in flight; installing
+191 info installOne imagemin@3.1.0
+192 verbose installOne of imagemin to /usr/local/lib/node_modules/grunt-contrib-imagemin not in flight; installing
+193 verbose lock using /home/john/.npm/_locks/chalk-fd9259fbcfa7d1ad.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+194 warn engine chalk@0.5.1: wanted: {"node":">=0.10.0"} (current: {"node":"0.13.0-pre","npm":"2.5.0"})
+195 verbose lock using /home/john/.npm/_locks/async-c379f005be1beda0.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/async
+196 verbose lock using /home/john/.npm/_locks/pretty-bytes-b35077dac8a2f67b.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes
+197 warn engine pretty-bytes@1.0.2: wanted: {"node":">=0.10.0"} (current: {"node":"0.13.0-pre","npm":"2.5.0"})
+198 silly install write writing chalk 0.5.1 to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+199 silly cache addNamed cb chalk@0.5.1
+200 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+201 silly install write writing async 0.9.0 to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/async
+202 silly cache addNamed cb async@0.9.0
+203 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/async
+204 verbose lock using /home/john/.npm/_locks/imagemin-9cce74265a2a148a.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/imagemin
+205 warn engine imagemin@3.1.0: wanted: {"node":">=0.10.0","npm":">=2.1.5"} (current: {"node":"0.13.0-pre","npm":"2.5.0"})
+206 silly install write writing pretty-bytes 1.0.2 to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes
+207 silly cache addNamed cb pretty-bytes@1.0.2
+208 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes
+209 silly install write writing imagemin 3.1.0 to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/imagemin
+210 silly cache addNamed cb imagemin@3.1.0
+211 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/imagemin
+212 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+213 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/async
+214 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes
+215 verbose tar unpack /home/john/.npm/chalk/0.5.1/package.tgz
+216 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+217 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+218 verbose tar unpack /home/john/.npm/async/0.9.0/package.tgz
+219 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/async
+220 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/async
+221 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/imagemin
+222 verbose tar unpack /home/john/.npm/pretty-bytes/1.0.2/package.tgz
+223 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes
+224 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes
+225 silly gunzTarPerm modes [ '755', '644' ]
+226 silly gunzTarPerm modes [ '755', '644' ]
+227 verbose tar unpack /home/john/.npm/imagemin/3.1.0/package.tgz
+228 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/imagemin
+229 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/imagemin
+230 silly gunzTarPerm modes [ '755', '644' ]
+231 silly gunzTarPerm modes [ '755', '644' ]
+232 silly gunzTarPerm extractEntry package.json
+233 silly gunzTarPerm extractEntry package.json
+234 silly gunzTarPerm extractEntry package.json
+235 silly gunzTarPerm extractEntry package.json
+236 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+237 silly gunzTarPerm extractEntry index.js
+238 silly gunzTarPerm extractEntry readme.md
+239 silly gunzTarPerm extractEntry README.md
+240 silly gunzTarPerm extractEntry LICENSE
+241 silly gunzTarPerm extractEntry .travis.yml
+242 silly gunzTarPerm extractEntry component.json
+243 silly gunzTarPerm extractEntry lib/async.js
+244 silly gunzTarPerm extractEntry pretty-bytes.js
+245 silly gunzTarPerm extractEntry cli.js
+246 silly gunzTarPerm extractEntry README.md
+247 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+248 silly gunzTarPerm extractEntry cli.js
+249 silly gunzTarPerm modified mode [ 'cli.js', 509, 493 ]
+250 silly gunzTarPerm extractEntry readme.md
+251 silly gunzTarPerm extractEntry index.js
+252 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+253 silly gunzTarPerm extractEntry LICENSE.md
+254 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+255 info preinstall chalk@0.5.1
+256 info preinstall pretty-bytes@1.0.2
+257 silly prepareForInstallMany adding ansi-styles@^1.1.0 from chalk dependencies
+258 silly prepareForInstallMany adding escape-string-regexp@^1.0.0 from chalk dependencies
+259 silly prepareForInstallMany adding has-ansi@^0.1.0 from chalk dependencies
+260 silly prepareForInstallMany adding strip-ansi@^0.3.0 from chalk dependencies
+261 silly prepareForInstallMany adding supports-color@^0.2.0 from chalk dependencies
+262 silly prepareForInstallMany adding get-stdin@^1.0.0 from pretty-bytes dependencies
+263 silly cache add args [ 'ansi-styles@^1.1.0', null ]
+264 verbose cache add spec ansi-styles@^1.1.0
+265 silly cache add args [ 'escape-string-regexp@^1.0.0', null ]
+266 verbose cache add spec escape-string-regexp@^1.0.0
+267 silly cache add parsed spec { raw: 'ansi-styles@^1.1.0',
+267 silly cache add   scope: null,
+267 silly cache add   name: 'ansi-styles',
+267 silly cache add   rawSpec: '^1.1.0',
+267 silly cache add   spec: '>=1.1.0 <2.0.0',
+267 silly cache add   type: 'range' }
+268 verbose addNamed ansi-styles@>=1.1.0 <2.0.0
+269 silly addNamed semver.valid null
+270 silly addNamed semver.validRange >=1.1.0 <2.0.0
+271 silly addNameRange { name: 'ansi-styles', range: '>=1.1.0 <2.0.0', hasData: false }
+272 silly mapToRegistry name ansi-styles
+273 silly mapToRegistry using default registry
+274 silly mapToRegistry registry https://registry.npmjs.org/
+275 silly mapToRegistry uri https://registry.npmjs.org/ansi-styles
+276 verbose addNameRange registry:https://registry.npmjs.org/ansi-styles not in flight; fetching
+277 silly cache add parsed spec { raw: 'escape-string-regexp@^1.0.0',
+277 silly cache add   scope: null,
+277 silly cache add   name: 'escape-string-regexp',
+277 silly cache add   rawSpec: '^1.0.0',
+277 silly cache add   spec: '>=1.0.0 <2.0.0',
+277 silly cache add   type: 'range' }
+278 verbose addNamed escape-string-regexp@>=1.0.0 <2.0.0
+279 silly addNamed semver.valid null
+280 silly addNamed semver.validRange >=1.0.0 <2.0.0
+281 silly addNameRange { name: 'escape-string-regexp',
+281 silly addNameRange   range: '>=1.0.0 <2.0.0',
+281 silly addNameRange   hasData: false }
+282 silly mapToRegistry name escape-string-regexp
+283 silly mapToRegistry using default registry
+284 silly mapToRegistry registry https://registry.npmjs.org/
+285 silly mapToRegistry uri https://registry.npmjs.org/escape-string-regexp
+286 verbose addNameRange registry:https://registry.npmjs.org/escape-string-regexp not in flight; fetching
+287 silly cache add args [ 'has-ansi@^0.1.0', null ]
+288 verbose cache add spec has-ansi@^0.1.0
+289 silly cache add parsed spec { raw: 'has-ansi@^0.1.0',
+289 silly cache add   scope: null,
+289 silly cache add   name: 'has-ansi',
+289 silly cache add   rawSpec: '^0.1.0',
+289 silly cache add   spec: '>=0.1.0 <0.2.0',
+289 silly cache add   type: 'range' }
+290 verbose addNamed has-ansi@>=0.1.0 <0.2.0
+291 silly addNamed semver.valid null
+292 silly addNamed semver.validRange >=0.1.0 <0.2.0
+293 silly addNameRange { name: 'has-ansi', range: '>=0.1.0 <0.2.0', hasData: false }
+294 silly mapToRegistry name has-ansi
+295 silly mapToRegistry using default registry
+296 silly mapToRegistry registry https://registry.npmjs.org/
+297 silly mapToRegistry uri https://registry.npmjs.org/has-ansi
+298 verbose addNameRange registry:https://registry.npmjs.org/has-ansi not in flight; fetching
+299 silly cache add args [ 'strip-ansi@^0.3.0', null ]
+300 verbose cache add spec strip-ansi@^0.3.0
+301 silly cache add parsed spec { raw: 'strip-ansi@^0.3.0',
+301 silly cache add   scope: null,
+301 silly cache add   name: 'strip-ansi',
+301 silly cache add   rawSpec: '^0.3.0',
+301 silly cache add   spec: '>=0.3.0 <0.4.0',
+301 silly cache add   type: 'range' }
+302 verbose addNamed strip-ansi@>=0.3.0 <0.4.0
+303 silly addNamed semver.valid null
+304 silly addNamed semver.validRange >=0.3.0 <0.4.0
+305 silly addNameRange { name: 'strip-ansi', range: '>=0.3.0 <0.4.0', hasData: false }
+306 silly mapToRegistry name strip-ansi
+307 silly mapToRegistry using default registry
+308 silly mapToRegistry registry https://registry.npmjs.org/
+309 silly mapToRegistry uri https://registry.npmjs.org/strip-ansi
+310 verbose addNameRange registry:https://registry.npmjs.org/strip-ansi not in flight; fetching
+311 silly cache add args [ 'supports-color@^0.2.0', null ]
+312 verbose cache add spec supports-color@^0.2.0
+313 silly cache add parsed spec { raw: 'supports-color@^0.2.0',
+313 silly cache add   scope: null,
+313 silly cache add   name: 'supports-color',
+313 silly cache add   rawSpec: '^0.2.0',
+313 silly cache add   spec: '>=0.2.0 <0.3.0',
+313 silly cache add   type: 'range' }
+314 verbose addNamed supports-color@>=0.2.0 <0.3.0
+315 silly addNamed semver.valid null
+316 silly addNamed semver.validRange >=0.2.0 <0.3.0
+317 silly addNameRange { name: 'supports-color',
+317 silly addNameRange   range: '>=0.2.0 <0.3.0',
+317 silly addNameRange   hasData: false }
+318 silly mapToRegistry name supports-color
+319 silly mapToRegistry using default registry
+320 silly mapToRegistry registry https://registry.npmjs.org/
+321 silly mapToRegistry uri https://registry.npmjs.org/supports-color
+322 verbose addNameRange registry:https://registry.npmjs.org/supports-color not in flight; fetching
+323 verbose request uri https://registry.npmjs.org/ansi-styles
+324 verbose request no auth needed
+325 info attempt registry request try #1 at 14:20:56
+326 verbose etag "BUX7VBFREJT1WVGR39JA5IWXO"
+327 http request GET https://registry.npmjs.org/ansi-styles
+328 verbose request uri https://registry.npmjs.org/has-ansi
+329 verbose request no auth needed
+330 info attempt registry request try #1 at 14:20:56
+331 verbose etag "5C5J4VN7XOZ2U1MPJLI98QLNL"
+332 http request GET https://registry.npmjs.org/has-ansi
+333 verbose request uri https://registry.npmjs.org/escape-string-regexp
+334 verbose request no auth needed
+335 info attempt registry request try #1 at 14:20:56
+336 verbose etag "5BZS84XXLUIIF7I9IO3TP3R9T"
+337 http request GET https://registry.npmjs.org/escape-string-regexp
+338 verbose request uri https://registry.npmjs.org/strip-ansi
+339 verbose request no auth needed
+340 info attempt registry request try #1 at 14:20:56
+341 verbose etag "AQCEDFO4TRSYKIA5CJEEMGWQI"
+342 http request GET https://registry.npmjs.org/strip-ansi
+343 verbose request uri https://registry.npmjs.org/supports-color
+344 verbose request no auth needed
+345 info attempt registry request try #1 at 14:20:56
+346 verbose etag "D5AIM6PMN6EK2V2EFMY21PLJP"
+347 http request GET https://registry.npmjs.org/supports-color
+348 silly cache add args [ 'get-stdin@^1.0.0', null ]
+349 verbose cache add spec get-stdin@^1.0.0
+350 silly cache add parsed spec { raw: 'get-stdin@^1.0.0',
+350 silly cache add   scope: null,
+350 silly cache add   name: 'get-stdin',
+350 silly cache add   rawSpec: '^1.0.0',
+350 silly cache add   spec: '>=1.0.0 <2.0.0',
+350 silly cache add   type: 'range' }
+351 verbose addNamed get-stdin@>=1.0.0 <2.0.0
+352 silly addNamed semver.valid null
+353 silly addNamed semver.validRange >=1.0.0 <2.0.0
+354 silly addNameRange { name: 'get-stdin', range: '>=1.0.0 <2.0.0', hasData: false }
+355 silly mapToRegistry name get-stdin
+356 silly mapToRegistry using default registry
+357 silly mapToRegistry registry https://registry.npmjs.org/
+358 silly mapToRegistry uri https://registry.npmjs.org/get-stdin
+359 verbose addNameRange registry:https://registry.npmjs.org/get-stdin not in flight; fetching
+360 verbose request uri https://registry.npmjs.org/get-stdin
+361 verbose request no auth needed
+362 info attempt registry request try #1 at 14:20:56
+363 verbose etag "ERA7J7SW57UPU7QKDCIBGJ0VZ"
+364 http request GET https://registry.npmjs.org/get-stdin
+365 info preinstall imagemin@3.1.0
+366 silly prepareForInstallMany adding concat-stream@^1.4.6 from imagemin dependencies
+367 silly prepareForInstallMany adding get-stdin@^3.0.0 from imagemin dependencies
+368 silly prepareForInstallMany adding meow@^2.0.0 from imagemin dependencies
+369 silly prepareForInstallMany adding optional@^0.1.0 from imagemin dependencies
+370 silly prepareForInstallMany adding stream-combiner@^0.2.1 from imagemin dependencies
+371 silly prepareForInstallMany adding through2@^0.6.1 from imagemin dependencies
+372 silly prepareForInstallMany adding vinyl@^0.4.3 from imagemin dependencies
+373 silly prepareForInstallMany adding vinyl-fs@^0.3.7 from imagemin dependencies
+374 silly prepareForInstallMany adding imagemin-gifsicle@^4.0.0 from imagemin dependencies
+375 silly prepareForInstallMany adding imagemin-jpegtran@^4.0.0 from imagemin dependencies
+376 silly prepareForInstallMany adding imagemin-optipng@^4.0.0 from imagemin dependencies
+377 silly prepareForInstallMany adding imagemin-pngquant@^4.0.0 from imagemin dependencies
+378 silly prepareForInstallMany adding imagemin-svgo@^4.0.0 from imagemin dependencies
+379 silly cache add args [ 'meow@^2.0.0', null ]
+380 verbose cache add spec meow@^2.0.0
+381 silly cache add parsed spec { raw: 'meow@^2.0.0',
+381 silly cache add   scope: null,
+381 silly cache add   name: 'meow',
+381 silly cache add   rawSpec: '^2.0.0',
+381 silly cache add   spec: '>=2.0.0 <3.0.0',
+381 silly cache add   type: 'range' }
+382 verbose addNamed meow@>=2.0.0 <3.0.0
+383 silly addNamed semver.valid null
+384 silly addNamed semver.validRange >=2.0.0 <3.0.0
+385 silly addNameRange { name: 'meow', range: '>=2.0.0 <3.0.0', hasData: false }
+386 silly mapToRegistry name meow
+387 silly mapToRegistry using default registry
+388 silly mapToRegistry registry https://registry.npmjs.org/
+389 silly mapToRegistry uri https://registry.npmjs.org/meow
+390 verbose addNameRange registry:https://registry.npmjs.org/meow not in flight; fetching
+391 silly cache add args [ 'optional@^0.1.0', null ]
+392 verbose cache add spec optional@^0.1.0
+393 silly cache add parsed spec { raw: 'optional@^0.1.0',
+393 silly cache add   scope: null,
+393 silly cache add   name: 'optional',
+393 silly cache add   rawSpec: '^0.1.0',
+393 silly cache add   spec: '>=0.1.0 <0.2.0',
+393 silly cache add   type: 'range' }
+394 verbose addNamed optional@>=0.1.0 <0.2.0
+395 silly addNamed semver.valid null
+396 silly addNamed semver.validRange >=0.1.0 <0.2.0
+397 silly addNameRange { name: 'optional', range: '>=0.1.0 <0.2.0', hasData: false }
+398 silly mapToRegistry name optional
+399 silly mapToRegistry using default registry
+400 silly mapToRegistry registry https://registry.npmjs.org/
+401 silly mapToRegistry uri https://registry.npmjs.org/optional
+402 verbose addNameRange registry:https://registry.npmjs.org/optional not in flight; fetching
+403 silly cache add args [ 'stream-combiner@^0.2.1', null ]
+404 verbose cache add spec stream-combiner@^0.2.1
+405 silly cache add parsed spec { raw: 'stream-combiner@^0.2.1',
+405 silly cache add   scope: null,
+405 silly cache add   name: 'stream-combiner',
+405 silly cache add   rawSpec: '^0.2.1',
+405 silly cache add   spec: '>=0.2.1 <0.3.0',
+405 silly cache add   type: 'range' }
+406 verbose addNamed stream-combiner@>=0.2.1 <0.3.0
+407 silly addNamed semver.valid null
+408 silly addNamed semver.validRange >=0.2.1 <0.3.0
+409 silly addNameRange { name: 'stream-combiner',
+409 silly addNameRange   range: '>=0.2.1 <0.3.0',
+409 silly addNameRange   hasData: false }
+410 silly mapToRegistry name stream-combiner
+411 silly mapToRegistry using default registry
+412 silly mapToRegistry registry https://registry.npmjs.org/
+413 silly mapToRegistry uri https://registry.npmjs.org/stream-combiner
+414 verbose addNameRange registry:https://registry.npmjs.org/stream-combiner not in flight; fetching
+415 silly cache add args [ 'through2@^0.6.1', null ]
+416 verbose cache add spec through2@^0.6.1
+417 silly cache add parsed spec { raw: 'through2@^0.6.1',
+417 silly cache add   scope: null,
+417 silly cache add   name: 'through2',
+417 silly cache add   rawSpec: '^0.6.1',
+417 silly cache add   spec: '>=0.6.1 <0.7.0',
+417 silly cache add   type: 'range' }
+418 verbose addNamed through2@>=0.6.1 <0.7.0
+419 silly addNamed semver.valid null
+420 silly addNamed semver.validRange >=0.6.1 <0.7.0
+421 silly addNameRange { name: 'through2', range: '>=0.6.1 <0.7.0', hasData: false }
+422 silly mapToRegistry name through2
+423 silly mapToRegistry using default registry
+424 silly mapToRegistry registry https://registry.npmjs.org/
+425 silly mapToRegistry uri https://registry.npmjs.org/through2
+426 verbose addNameRange registry:https://registry.npmjs.org/through2 not in flight; fetching
+427 silly cache add args [ 'vinyl@^0.4.3', null ]
+428 verbose cache add spec vinyl@^0.4.3
+429 silly cache add parsed spec { raw: 'vinyl@^0.4.3',
+429 silly cache add   scope: null,
+429 silly cache add   name: 'vinyl',
+429 silly cache add   rawSpec: '^0.4.3',
+429 silly cache add   spec: '>=0.4.3 <0.5.0',
+429 silly cache add   type: 'range' }
+430 verbose addNamed vinyl@>=0.4.3 <0.5.0
+431 silly addNamed semver.valid null
+432 silly addNamed semver.validRange >=0.4.3 <0.5.0
+433 silly addNameRange { name: 'vinyl', range: '>=0.4.3 <0.5.0', hasData: false }
+434 silly mapToRegistry name vinyl
+435 silly mapToRegistry using default registry
+436 silly mapToRegistry registry https://registry.npmjs.org/
+437 silly mapToRegistry uri https://registry.npmjs.org/vinyl
+438 verbose addNameRange registry:https://registry.npmjs.org/vinyl not in flight; fetching
+439 silly cache add args [ 'vinyl-fs@^0.3.7', null ]
+440 verbose cache add spec vinyl-fs@^0.3.7
+441 silly cache add parsed spec { raw: 'vinyl-fs@^0.3.7',
+441 silly cache add   scope: null,
+441 silly cache add   name: 'vinyl-fs',
+441 silly cache add   rawSpec: '^0.3.7',
+441 silly cache add   spec: '>=0.3.7 <0.4.0',
+441 silly cache add   type: 'range' }
+442 verbose addNamed vinyl-fs@>=0.3.7 <0.4.0
+443 silly addNamed semver.valid null
+444 silly addNamed semver.validRange >=0.3.7 <0.4.0
+445 silly addNameRange { name: 'vinyl-fs', range: '>=0.3.7 <0.4.0', hasData: false }
+446 silly mapToRegistry name vinyl-fs
+447 silly mapToRegistry using default registry
+448 silly mapToRegistry registry https://registry.npmjs.org/
+449 silly mapToRegistry uri https://registry.npmjs.org/vinyl-fs
+450 verbose addNameRange registry:https://registry.npmjs.org/vinyl-fs not in flight; fetching
+451 silly cache add args [ 'imagemin-gifsicle@^4.0.0', null ]
+452 verbose cache add spec imagemin-gifsicle@^4.0.0
+453 silly cache add parsed spec { raw: 'imagemin-gifsicle@^4.0.0',
+453 silly cache add   scope: null,
+453 silly cache add   name: 'imagemin-gifsicle',
+453 silly cache add   rawSpec: '^4.0.0',
+453 silly cache add   spec: '>=4.0.0 <5.0.0',
+453 silly cache add   type: 'range' }
+454 verbose addNamed imagemin-gifsicle@>=4.0.0 <5.0.0
+455 silly addNamed semver.valid null
+456 silly addNamed semver.validRange >=4.0.0 <5.0.0
+457 silly addNameRange { name: 'imagemin-gifsicle',
+457 silly addNameRange   range: '>=4.0.0 <5.0.0',
+457 silly addNameRange   hasData: false }
+458 silly mapToRegistry name imagemin-gifsicle
+459 silly mapToRegistry using default registry
+460 silly mapToRegistry registry https://registry.npmjs.org/
+461 silly mapToRegistry uri https://registry.npmjs.org/imagemin-gifsicle
+462 verbose addNameRange registry:https://registry.npmjs.org/imagemin-gifsicle not in flight; fetching
+463 silly cache add args [ 'imagemin-jpegtran@^4.0.0', null ]
+464 verbose cache add spec imagemin-jpegtran@^4.0.0
+465 silly cache add parsed spec { raw: 'imagemin-jpegtran@^4.0.0',
+465 silly cache add   scope: null,
+465 silly cache add   name: 'imagemin-jpegtran',
+465 silly cache add   rawSpec: '^4.0.0',
+465 silly cache add   spec: '>=4.0.0 <5.0.0',
+465 silly cache add   type: 'range' }
+466 verbose addNamed imagemin-jpegtran@>=4.0.0 <5.0.0
+467 silly addNamed semver.valid null
+468 silly addNamed semver.validRange >=4.0.0 <5.0.0
+469 silly addNameRange { name: 'imagemin-jpegtran',
+469 silly addNameRange   range: '>=4.0.0 <5.0.0',
+469 silly addNameRange   hasData: false }
+470 silly mapToRegistry name imagemin-jpegtran
+471 silly mapToRegistry using default registry
+472 silly mapToRegistry registry https://registry.npmjs.org/
+473 silly mapToRegistry uri https://registry.npmjs.org/imagemin-jpegtran
+474 verbose addNameRange registry:https://registry.npmjs.org/imagemin-jpegtran not in flight; fetching
+475 silly cache add args [ 'imagemin-optipng@^4.0.0', null ]
+476 verbose cache add spec imagemin-optipng@^4.0.0
+477 silly cache add parsed spec { raw: 'imagemin-optipng@^4.0.0',
+477 silly cache add   scope: null,
+477 silly cache add   name: 'imagemin-optipng',
+477 silly cache add   rawSpec: '^4.0.0',
+477 silly cache add   spec: '>=4.0.0 <5.0.0',
+477 silly cache add   type: 'range' }
+478 verbose addNamed imagemin-optipng@>=4.0.0 <5.0.0
+479 silly addNamed semver.valid null
+480 silly addNamed semver.validRange >=4.0.0 <5.0.0
+481 silly addNameRange { name: 'imagemin-optipng',
+481 silly addNameRange   range: '>=4.0.0 <5.0.0',
+481 silly addNameRange   hasData: false }
+482 silly mapToRegistry name imagemin-optipng
+483 silly mapToRegistry using default registry
+484 silly mapToRegistry registry https://registry.npmjs.org/
+485 silly mapToRegistry uri https://registry.npmjs.org/imagemin-optipng
+486 verbose addNameRange registry:https://registry.npmjs.org/imagemin-optipng not in flight; fetching
+487 silly cache add args [ 'imagemin-pngquant@^4.0.0', null ]
+488 verbose cache add spec imagemin-pngquant@^4.0.0
+489 silly cache add parsed spec { raw: 'imagemin-pngquant@^4.0.0',
+489 silly cache add   scope: null,
+489 silly cache add   name: 'imagemin-pngquant',
+489 silly cache add   rawSpec: '^4.0.0',
+489 silly cache add   spec: '>=4.0.0 <5.0.0',
+489 silly cache add   type: 'range' }
+490 verbose addNamed imagemin-pngquant@>=4.0.0 <5.0.0
+491 silly addNamed semver.valid null
+492 silly addNamed semver.validRange >=4.0.0 <5.0.0
+493 silly addNameRange { name: 'imagemin-pngquant',
+493 silly addNameRange   range: '>=4.0.0 <5.0.0',
+493 silly addNameRange   hasData: false }
+494 silly mapToRegistry name imagemin-pngquant
+495 silly mapToRegistry using default registry
+496 silly mapToRegistry registry https://registry.npmjs.org/
+497 silly mapToRegistry uri https://registry.npmjs.org/imagemin-pngquant
+498 verbose addNameRange registry:https://registry.npmjs.org/imagemin-pngquant not in flight; fetching
+499 silly cache add args [ 'imagemin-svgo@^4.0.0', null ]
+500 verbose cache add spec imagemin-svgo@^4.0.0
+501 silly cache add parsed spec { raw: 'imagemin-svgo@^4.0.0',
+501 silly cache add   scope: null,
+501 silly cache add   name: 'imagemin-svgo',
+501 silly cache add   rawSpec: '^4.0.0',
+501 silly cache add   spec: '>=4.0.0 <5.0.0',
+501 silly cache add   type: 'range' }
+502 verbose addNamed imagemin-svgo@>=4.0.0 <5.0.0
+503 silly addNamed semver.valid null
+504 silly addNamed semver.validRange >=4.0.0 <5.0.0
+505 silly addNameRange { name: 'imagemin-svgo',
+505 silly addNameRange   range: '>=4.0.0 <5.0.0',
+505 silly addNameRange   hasData: false }
+506 silly mapToRegistry name imagemin-svgo
+507 silly mapToRegistry using default registry
+508 silly mapToRegistry registry https://registry.npmjs.org/
+509 silly mapToRegistry uri https://registry.npmjs.org/imagemin-svgo
+510 verbose addNameRange registry:https://registry.npmjs.org/imagemin-svgo not in flight; fetching
+511 silly cache add args [ 'concat-stream@^1.4.6', null ]
+512 verbose cache add spec concat-stream@^1.4.6
+513 silly cache add parsed spec { raw: 'concat-stream@^1.4.6',
+513 silly cache add   scope: null,
+513 silly cache add   name: 'concat-stream',
+513 silly cache add   rawSpec: '^1.4.6',
+513 silly cache add   spec: '>=1.4.6 <2.0.0',
+513 silly cache add   type: 'range' }
+514 verbose addNamed concat-stream@>=1.4.6 <2.0.0
+515 silly addNamed semver.valid null
+516 silly addNamed semver.validRange >=1.4.6 <2.0.0
+517 silly addNameRange { name: 'concat-stream',
+517 silly addNameRange   range: '>=1.4.6 <2.0.0',
+517 silly addNameRange   hasData: false }
+518 silly mapToRegistry name concat-stream
+519 silly mapToRegistry using default registry
+520 silly mapToRegistry registry https://registry.npmjs.org/
+521 silly mapToRegistry uri https://registry.npmjs.org/concat-stream
+522 verbose addNameRange registry:https://registry.npmjs.org/concat-stream not in flight; fetching
+523 silly cache add args [ 'get-stdin@^3.0.0', null ]
+524 verbose cache add spec get-stdin@^3.0.0
+525 silly cache add parsed spec { raw: 'get-stdin@^3.0.0',
+525 silly cache add   scope: null,
+525 silly cache add   name: 'get-stdin',
+525 silly cache add   rawSpec: '^3.0.0',
+525 silly cache add   spec: '>=3.0.0 <4.0.0',
+525 silly cache add   type: 'range' }
+526 verbose addNamed get-stdin@>=3.0.0 <4.0.0
+527 silly addNamed semver.valid null
+528 silly addNamed semver.validRange >=3.0.0 <4.0.0
+529 silly addNameRange { name: 'get-stdin', range: '>=3.0.0 <4.0.0', hasData: false }
+530 silly mapToRegistry name get-stdin
+531 silly mapToRegistry using default registry
+532 silly mapToRegistry registry https://registry.npmjs.org/
+533 silly mapToRegistry uri https://registry.npmjs.org/get-stdin
+534 verbose addNameRange registry:https://registry.npmjs.org/get-stdin already in flight; waiting
+535 verbose request uri https://registry.npmjs.org/meow
+536 verbose request no auth needed
+537 info attempt registry request try #1 at 14:20:56
+538 verbose etag "3YRMEQHPVTSDKQ9XSBVVC519A"
+539 http request GET https://registry.npmjs.org/meow
+540 verbose request uri https://registry.npmjs.org/optional
+541 verbose request no auth needed
+542 info attempt registry request try #1 at 14:20:56
+543 verbose etag "9ANMD1FXRE5B7PVPEHZCKFWVV"
+544 http request GET https://registry.npmjs.org/optional
+545 verbose request uri https://registry.npmjs.org/through2
+546 verbose request no auth needed
+547 info attempt registry request try #1 at 14:20:56
+548 verbose etag "74H9TM45KKQFVZD1B7THIAA0P"
+549 http request GET https://registry.npmjs.org/through2
+550 verbose request uri https://registry.npmjs.org/vinyl
+551 verbose request no auth needed
+552 info attempt registry request try #1 at 14:20:56
+553 verbose etag "VR22WPK56H8ZH6QYG6KRY651"
+554 http request GET https://registry.npmjs.org/vinyl
+555 verbose request uri https://registry.npmjs.org/stream-combiner
+556 verbose request no auth needed
+557 info attempt registry request try #1 at 14:20:56
+558 verbose etag "4Y0I6748TEWD0UY2ULEQLXFAJ"
+559 http request GET https://registry.npmjs.org/stream-combiner
+560 verbose request uri https://registry.npmjs.org/vinyl-fs
+561 verbose request no auth needed
+562 info attempt registry request try #1 at 14:20:56
+563 verbose etag "E3MEQXMUCO15QDC6XT1FHKOU9"
+564 http request GET https://registry.npmjs.org/vinyl-fs
+565 verbose request uri https://registry.npmjs.org/imagemin-gifsicle
+566 verbose request no auth needed
+567 info attempt registry request try #1 at 14:20:56
+568 verbose etag "9V5YBYG1TV4W1K0QN5127ST31"
+569 http request GET https://registry.npmjs.org/imagemin-gifsicle
+570 verbose request uri https://registry.npmjs.org/imagemin-jpegtran
+571 verbose request no auth needed
+572 info attempt registry request try #1 at 14:20:56
+573 verbose etag "9WY71IC2XCGAWTJ7T80U1L3M5"
+574 http request GET https://registry.npmjs.org/imagemin-jpegtran
+575 verbose request uri https://registry.npmjs.org/imagemin-optipng
+576 verbose request no auth needed
+577 info attempt registry request try #1 at 14:20:56
+578 verbose etag "B1EWYQA40WBIFP105WBPNNPW0"
+579 http request GET https://registry.npmjs.org/imagemin-optipng
+580 verbose request uri https://registry.npmjs.org/imagemin-pngquant
+581 verbose request no auth needed
+582 info attempt registry request try #1 at 14:20:56
+583 verbose etag "26KAZ7GHZTYIBJDPCSZ274LB1"
+584 http request GET https://registry.npmjs.org/imagemin-pngquant
+585 verbose request uri https://registry.npmjs.org/imagemin-svgo
+586 verbose request no auth needed
+587 info attempt registry request try #1 at 14:20:56
+588 verbose etag "475UP5BGSL343PT9PQ0RQ17YQ"
+589 http request GET https://registry.npmjs.org/imagemin-svgo
+590 verbose request uri https://registry.npmjs.org/concat-stream
+591 verbose request no auth needed
+592 info attempt registry request try #1 at 14:20:56
+593 verbose etag "DAU0CXDGWJRJRHE8GJ2VBNR99"
+594 http request GET https://registry.npmjs.org/concat-stream
+595 info preinstall async@0.9.0
+596 silly install resolved []
+597 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/async
+598 info build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/async
+599 verbose linkStuff [ true,
+599 verbose linkStuff   '/usr/local/lib/node_modules',
+599 verbose linkStuff   false,
+599 verbose linkStuff   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules' ]
+600 info linkStuff async@0.9.0
+601 verbose linkBins async@0.9.0
+602 verbose linkMans async@0.9.0
+603 verbose rebuildBundles async@0.9.0
+604 info install async@0.9.0
+605 info postinstall async@0.9.0
+606 verbose unlock done using /home/john/.npm/_locks/async-c379f005be1beda0.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/async
+607 http 304 https://registry.npmjs.org/has-ansi
+608 silly get cb [ 304,
+608 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+608 silly get     server: 'Apache',
+608 silly get     via: '1.1 varnish',
+608 silly get     'last-modified': 'Tue, 10 Feb 2015 13:16:52 GMT',
+608 silly get     'cache-control': 'max-age=60',
+608 silly get     etag: '"5C5J4VN7XOZ2U1MPJLI98QLNL"',
+608 silly get     age: '59',
+608 silly get     'x-served-by': 'cache-fra1237-FRA',
+608 silly get     'x-cache': 'HIT',
+608 silly get     'x-cache-hits': '121',
+608 silly get     'x-timer': 'S1423574456.757029,VS0,VE0',
+608 silly get     vary: 'Accept',
+608 silly get     'content-length': '0',
+608 silly get     'keep-alive': 'timeout=10, max=50',
+608 silly get     connection: 'Keep-Alive' } ]
+609 verbose etag https://registry.npmjs.org/has-ansi from cache
+610 verbose get saving has-ansi to /home/john/.npm/registry.npmjs.org/has-ansi/.cache.json
+611 silly addNameRange number 2 { name: 'has-ansi', range: '>=0.1.0 <0.2.0', hasData: true }
+612 silly addNameRange versions [ 'has-ansi', [ '0.1.0', '1.0.0', '1.0.1' ] ]
+613 verbose addNamed has-ansi@0.1.0
+614 silly addNamed semver.valid 0.1.0
+615 silly addNamed semver.validRange 0.1.0
+616 http 304 https://registry.npmjs.org/ansi-styles
+617 silly get cb [ 304,
+617 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+617 silly get     server: 'Apache',
+617 silly get     via: '1.1 varnish',
+617 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:11 GMT',
+617 silly get     'cache-control': 'max-age=60',
+617 silly get     etag: '"BUX7VBFREJT1WVGR39JA5IWXO"',
+617 silly get     age: '46',
+617 silly get     'x-served-by': 'cache-fra1222-FRA',
+617 silly get     'x-cache': 'HIT',
+617 silly get     'x-cache-hits': '3',
+617 silly get     'x-timer': 'S1423574456.761075,VS0,VE0',
+617 silly get     vary: 'Accept',
+617 silly get     'content-length': '0',
+617 silly get     'keep-alive': 'timeout=10, max=50',
+617 silly get     connection: 'Keep-Alive' } ]
+618 verbose etag https://registry.npmjs.org/ansi-styles from cache
+619 verbose get saving ansi-styles to /home/john/.npm/registry.npmjs.org/ansi-styles/.cache.json
+620 http 304 https://registry.npmjs.org/strip-ansi
+621 silly get cb [ 304,
+621 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+621 silly get     server: 'Apache',
+621 silly get     via: '1.1 varnish',
+621 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:31 GMT',
+621 silly get     'cache-control': 'max-age=60',
+621 silly get     etag: '"AQCEDFO4TRSYKIA5CJEEMGWQI"',
+621 silly get     age: '35',
+621 silly get     'x-served-by': 'cache-fra1245-FRA',
+621 silly get     'x-cache': 'HIT',
+621 silly get     'x-cache-hits': '3',
+621 silly get     'x-timer': 'S1423574456.762342,VS0,VE0',
+621 silly get     vary: 'Accept',
+621 silly get     'content-length': '0',
+621 silly get     'keep-alive': 'timeout=10, max=50',
+621 silly get     connection: 'Keep-Alive' } ]
+622 verbose etag https://registry.npmjs.org/strip-ansi from cache
+623 verbose get saving strip-ansi to /home/john/.npm/registry.npmjs.org/strip-ansi/.cache.json
+624 http 304 https://registry.npmjs.org/escape-string-regexp
+625 silly get cb [ 304,
+625 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+625 silly get     server: 'Apache',
+625 silly get     via: '1.1 varnish',
+625 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:31 GMT',
+625 silly get     'cache-control': 'max-age=60',
+625 silly get     etag: '"5BZS84XXLUIIF7I9IO3TP3R9T"',
+625 silly get     age: '33',
+625 silly get     'x-served-by': 'cache-fra1244-FRA',
+625 silly get     'x-cache': 'HIT',
+625 silly get     'x-cache-hits': '3',
+625 silly get     'x-timer': 'S1423574456.772014,VS0,VE0',
+625 silly get     vary: 'Accept',
+625 silly get     'content-length': '0',
+625 silly get     'keep-alive': 'timeout=10, max=50',
+625 silly get     connection: 'Keep-Alive' } ]
+626 verbose etag https://registry.npmjs.org/escape-string-regexp from cache
+627 verbose get saving escape-string-regexp to /home/john/.npm/registry.npmjs.org/escape-string-regexp/.cache.json
+628 http 304 https://registry.npmjs.org/get-stdin
+629 silly get cb [ 304,
+629 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+629 silly get     server: 'Apache',
+629 silly get     via: '1.1 varnish',
+629 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:56 GMT',
+629 silly get     'cache-control': 'max-age=60',
+629 silly get     etag: '"ERA7J7SW57UPU7QKDCIBGJ0VZ"',
+629 silly get     age: '1',
+629 silly get     'x-served-by': 'cache-fra1245-FRA',
+629 silly get     'x-cache': 'HIT',
+629 silly get     'x-cache-hits': '1',
+629 silly get     'x-timer': 'S1423574456.773320,VS0,VE0',
+629 silly get     vary: 'Accept',
+629 silly get     'content-length': '0',
+629 silly get     'keep-alive': 'timeout=10, max=50',
+629 silly get     connection: 'Keep-Alive' } ]
+630 verbose etag https://registry.npmjs.org/get-stdin from cache
+631 verbose get saving get-stdin to /home/john/.npm/registry.npmjs.org/get-stdin/.cache.json
+632 silly cache afterAdd has-ansi@0.1.0
+633 verbose afterAdd /home/john/.npm/has-ansi/0.1.0/package/package.json not in flight; writing
+634 silly addNameRange number 2 { name: 'ansi-styles', range: '>=1.1.0 <2.0.0', hasData: true }
+635 silly addNameRange versions [ 'ansi-styles',
+635 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.2.0', '1.0.0', '1.1.0', '2.0.0' ] ]
+636 verbose addNamed ansi-styles@1.1.0
+637 silly addNamed semver.valid 1.1.0
+638 silly addNamed semver.validRange 1.1.0
+639 silly addNameRange number 2 { name: 'strip-ansi', range: '>=0.3.0 <0.4.0', hasData: true }
+640 silly addNameRange versions [ 'strip-ansi',
+640 silly addNameRange   [ '0.1.0',
+640 silly addNameRange     '0.1.1',
+640 silly addNameRange     '0.2.0',
+640 silly addNameRange     '0.2.1',
+640 silly addNameRange     '0.2.2',
+640 silly addNameRange     '0.3.0',
+640 silly addNameRange     '1.0.0',
+640 silly addNameRange     '2.0.0',
+640 silly addNameRange     '2.0.1' ] ]
+641 verbose addNamed strip-ansi@0.3.0
+642 silly addNamed semver.valid 0.3.0
+643 silly addNamed semver.validRange 0.3.0
+644 http 304 https://registry.npmjs.org/supports-color
+645 silly get cb [ 304,
+645 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+645 silly get     server: 'Apache',
+645 silly get     via: '1.1 varnish',
+645 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:02 GMT',
+645 silly get     'cache-control': 'max-age=60',
+645 silly get     etag: '"D5AIM6PMN6EK2V2EFMY21PLJP"',
+645 silly get     age: '58',
+645 silly get     'x-served-by': 'cache-fra1228-FRA',
+645 silly get     'x-cache': 'HIT',
+645 silly get     'x-cache-hits': '4',
+645 silly get     'x-timer': 'S1423574456.778654,VS0,VE0',
+645 silly get     vary: 'Accept',
+645 silly get     'content-length': '0',
+645 silly get     'keep-alive': 'timeout=10, max=50',
+645 silly get     connection: 'Keep-Alive' } ]
+646 verbose etag https://registry.npmjs.org/supports-color from cache
+647 verbose get saving supports-color to /home/john/.npm/registry.npmjs.org/supports-color/.cache.json
+648 verbose afterAdd /home/john/.npm/has-ansi/0.1.0/package/package.json written
+649 silly addNameRange number 2 { name: 'escape-string-regexp',
+649 silly addNameRange   range: '>=1.0.0 <2.0.0',
+649 silly addNameRange   hasData: true }
+650 silly addNameRange versions [ 'escape-string-regexp', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+651 verbose addNamed escape-string-regexp@1.0.2
+652 silly addNamed semver.valid 1.0.2
+653 silly addNamed semver.validRange 1.0.2
+654 silly addNameRange number 2 { name: 'get-stdin', range: '>=1.0.0 <2.0.0', hasData: true }
+655 silly addNameRange versions [ 'get-stdin',
+655 silly addNameRange   [ '0.1.0',
+655 silly addNameRange     '1.0.0',
+655 silly addNameRange     '2.0.0',
+655 silly addNameRange     '3.0.0',
+655 silly addNameRange     '3.0.1',
+655 silly addNameRange     '3.0.2',
+655 silly addNameRange     '4.0.0',
+655 silly addNameRange     '4.0.1' ] ]
+656 verbose addNamed get-stdin@1.0.0
+657 silly addNamed semver.valid 1.0.0
+658 silly addNamed semver.validRange 1.0.0
+659 silly addNameRange number 2 { name: 'get-stdin', range: '>=3.0.0 <4.0.0', hasData: true }
+660 silly addNameRange versions [ 'get-stdin',
+660 silly addNameRange   [ '0.1.0',
+660 silly addNameRange     '1.0.0',
+660 silly addNameRange     '2.0.0',
+660 silly addNameRange     '3.0.0',
+660 silly addNameRange     '3.0.1',
+660 silly addNameRange     '3.0.2',
+660 silly addNameRange     '4.0.0',
+660 silly addNameRange     '4.0.1' ] ]
+661 verbose addNamed get-stdin@3.0.2
+662 silly addNamed semver.valid 3.0.2
+663 silly addNamed semver.validRange 3.0.2
+664 silly cache afterAdd ansi-styles@1.1.0
+665 verbose afterAdd /home/john/.npm/ansi-styles/1.1.0/package/package.json not in flight; writing
+666 silly cache afterAdd strip-ansi@0.3.0
+667 verbose afterAdd /home/john/.npm/strip-ansi/0.3.0/package/package.json not in flight; writing
+668 silly addNameRange number 2 { name: 'supports-color',
+668 silly addNameRange   range: '>=0.2.0 <0.3.0',
+668 silly addNameRange   hasData: true }
+669 silly addNameRange versions [ 'supports-color', [ '0.2.0', '1.0.0', '1.1.0', '1.2.0' ] ]
+670 verbose addNamed supports-color@0.2.0
+671 silly addNamed semver.valid 0.2.0
+672 silly addNamed semver.validRange 0.2.0
+673 silly cache afterAdd escape-string-regexp@1.0.2
+674 verbose afterAdd /home/john/.npm/escape-string-regexp/1.0.2/package/package.json not in flight; writing
+675 verbose afterAdd /home/john/.npm/ansi-styles/1.1.0/package/package.json written
+676 silly cache afterAdd get-stdin@1.0.0
+677 verbose afterAdd /home/john/.npm/get-stdin/1.0.0/package/package.json not in flight; writing
+678 silly cache afterAdd get-stdin@3.0.2
+679 verbose afterAdd /home/john/.npm/get-stdin/3.0.2/package/package.json not in flight; writing
+680 verbose afterAdd /home/john/.npm/strip-ansi/0.3.0/package/package.json written
+681 silly cache afterAdd supports-color@0.2.0
+682 verbose afterAdd /home/john/.npm/supports-color/0.2.0/package/package.json not in flight; writing
+683 verbose afterAdd /home/john/.npm/escape-string-regexp/1.0.2/package/package.json written
+684 verbose afterAdd /home/john/.npm/get-stdin/1.0.0/package/package.json written
+685 silly install resolved [ { name: 'get-stdin',
+685 silly install resolved     version: '1.0.0',
+685 silly install resolved     description: 'Easier stdin',
+685 silly install resolved     license: 'MIT',
+685 silly install resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/get-stdin' },
+685 silly install resolved     author:
+685 silly install resolved      { name: 'Sindre Sorhus',
+685 silly install resolved        email: 'sindresorhus@gmail.com',
+685 silly install resolved        url: 'http://sindresorhus.com' },
+685 silly install resolved     engines: { node: '>=0.10.0' },
+685 silly install resolved     scripts: { test: 'echo unicorns | node test.js' },
+685 silly install resolved     files: [ 'index.js' ],
+685 silly install resolved     keywords:
+685 silly install resolved      [ 'std',
+685 silly install resolved        'stdin',
+685 silly install resolved        'stdio',
+685 silly install resolved        'concat',
+685 silly install resolved        'buffer',
+685 silly install resolved        'stream',
+685 silly install resolved        'process',
+685 silly install resolved        'stream' ],
+685 silly install resolved     devDependencies: { ava: '0.0.3' },
+685 silly install resolved     gitHead: '0932774723e6f0d56818927ddea5931462413c15',
+685 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/get-stdin/issues' },
+685 silly install resolved     homepage: 'https://github.com/sindresorhus/get-stdin',
+685 silly install resolved     _id: 'get-stdin@1.0.0',
+685 silly install resolved     _shasum: '00bd5a494c81c372f5629bea103bbffe7a1da3ce',
+685 silly install resolved     _from: 'get-stdin@>=1.0.0 <2.0.0',
+685 silly install resolved     _npmVersion: '1.4.14',
+685 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+685 silly install resolved     maintainers: [ [Object] ],
+685 silly install resolved     dist:
+685 silly install resolved      { shasum: '00bd5a494c81c372f5629bea103bbffe7a1da3ce',
+685 silly install resolved        tarball: 'http://registry.npmjs.org/get-stdin/-/get-stdin-1.0.0.tgz' },
+685 silly install resolved     directories: {},
+685 silly install resolved     _resolved: 'https://registry.npmjs.org/get-stdin/-/get-stdin-1.0.0.tgz',
+685 silly install resolved     readme: 'ERROR: No README data found!' } ]
+686 info install get-stdin@1.0.0 into /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes
+687 info installOne get-stdin@1.0.0
+688 verbose installOne of get-stdin to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes not in flight; installing
+689 verbose afterAdd /home/john/.npm/get-stdin/3.0.2/package/package.json written
+690 verbose afterAdd /home/john/.npm/supports-color/0.2.0/package/package.json written
+691 silly install resolved [ { name: 'has-ansi',
+691 silly install resolved     version: '0.1.0',
+691 silly install resolved     description: 'Check if a string has ANSI escape codes',
+691 silly install resolved     license: 'MIT',
+691 silly install resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/has-ansi' },
+691 silly install resolved     bin: { 'has-ansi': 'cli.js' },
+691 silly install resolved     author:
+691 silly install resolved      { name: 'Sindre Sorhus',
+691 silly install resolved        email: 'sindresorhus@gmail.com',
+691 silly install resolved        url: 'http://sindresorhus.com' },
+691 silly install resolved     engines: { node: '>=0.10.0' },
+691 silly install resolved     scripts: { test: 'mocha' },
+691 silly install resolved     files: [ 'index.js', 'cli.js' ],
+691 silly install resolved     keywords:
+691 silly install resolved      [ 'cli',
+691 silly install resolved        'bin',
+691 silly install resolved        'ansi',
+691 silly install resolved        'styles',
+691 silly install resolved        'color',
+691 silly install resolved        'colour',
+691 silly install resolved        'colors',
+691 silly install resolved        'terminal',
+691 silly install resolved        'console',
+691 silly install resolved        'string',
+691 silly install resolved        'tty',
+691 silly install resolved        'escape',
+691 silly install resolved        'shell',
+691 silly install resolved        'xterm',
+691 silly install resolved        'command-line',
+691 silly install resolved        'text',
+691 silly install resolved        'regex',
+691 silly install resolved        'regexp',
+691 silly install resolved        're',
+691 silly install resolved        'match',
+691 silly install resolved        'test',
+691 silly install resolved        'find',
+691 silly install resolved        'pattern',
+691 silly install resolved        'has' ],
+691 silly install resolved     dependencies: { 'ansi-regex': '^0.2.0' },
+691 silly install resolved     devDependencies: { mocha: '*' },
+691 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/has-ansi/issues' },
+691 silly install resolved     homepage: 'https://github.com/sindresorhus/has-ansi',
+691 silly install resolved     _id: 'has-ansi@0.1.0',
+691 silly install resolved     _shasum: '84f265aae8c0e6a88a12d7022894b7568894c62e',
+691 silly install resolved     _from: 'has-ansi@>=0.1.0 <0.2.0',
+691 silly install resolved     _npmVersion: '1.4.9',
+691 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+691 silly install resolved     maintainers: [ [Object] ],
+691 silly install resolved     dist:
+691 silly install resolved      { shasum: '84f265aae8c0e6a88a12d7022894b7568894c62e',
+691 silly install resolved        tarball: 'http://registry.npmjs.org/has-ansi/-/has-ansi-0.1.0.tgz' },
+691 silly install resolved     directories: {},
+691 silly install resolved     _resolved: 'https://registry.npmjs.org/has-ansi/-/has-ansi-0.1.0.tgz',
+691 silly install resolved     readme: 'ERROR: No README data found!' },
+691 silly install resolved   { name: 'ansi-styles',
+691 silly install resolved     version: '1.1.0',
+691 silly install resolved     description: 'ANSI escape codes for styling strings in the terminal',
+691 silly install resolved     license: 'MIT',
+691 silly install resolved     repository:
+691 silly install resolved      { type: 'git',
+691 silly install resolved        url: 'git://github.com/sindresorhus/ansi-styles' },
+691 silly install resolved     author:
+691 silly install resolved      { name: 'Sindre Sorhus',
+691 silly install resolved        email: 'sindresorhus@gmail.com',
+691 silly install resolved        url: 'http://sindresorhus.com' },
+691 silly install resolved     engines: { node: '>=0.10.0' },
+691 silly install resolved     scripts: { test: 'mocha' },
+691 silly install resolved     files: [ 'index.js' ],
+691 silly install resolved     keywords:
+691 silly install resolved      [ 'ansi',
+691 silly install resolved        'styles',
+691 silly install resolved        'color',
+691 silly install resolved        'colour',
+691 silly install resolved        'colors',
+691 silly install resolved        'terminal',
+691 silly install resolved        'console',
+691 silly install resolved        'cli',
+691 silly install resolved        'string',
+691 silly install resolved        'tty',
+691 silly install resolved        'escape',
+691 silly install resolved        'formatting',
+691 silly install resolved        'rgb',
+691 silly install resolved        '256',
+691 silly install resolved        'shell',
+691 silly install resolved        'xterm',
+691 silly install resolved        'log',
+691 silly install resolved        'logging',
+691 silly install resolved        'command-line',
+691 silly install resolved        'text' ],
+691 silly install resolved     devDependencies: { mocha: '*' },
+691 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/ansi-styles/issues' },
+691 silly install resolved     homepage: 'https://github.com/sindresorhus/ansi-styles',
+691 silly install resolved     _id: 'ansi-styles@1.1.0',
+691 silly install resolved     _shasum: 'eaecbf66cd706882760b2f4691582b8f55d7a7de',
+691 silly install resolved     _from: 'ansi-styles@>=1.1.0 <2.0.0',
+691 silly install resolved     _npmVersion: '1.4.9',
+691 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+691 silly install resolved     maintainers: [ [Object] ],
+691 silly install resolved     dist:
+691 silly install resolved      { shasum: 'eaecbf66cd706882760b2f4691582b8f55d7a7de',
+691 silly install resolved        tarball: 'http://registry.npmjs.org/ansi-styles/-/ansi-styles-1.1.0.tgz' },
+691 silly install resolved     directories: {},
+691 silly install resolved     _resolved: 'https://registry.npmjs.org/ansi-styles/-/ansi-styles-1.1.0.tgz',
+691 silly install resolved     readme: 'ERROR: No README data found!' },
+691 silly install resolved   { name: 'strip-ansi',
+691 silly install resolved     version: '0.3.0',
+691 silly install resolved     description: 'Strip ANSI escape codes',
+691 silly install resolved     license: 'MIT',
+691 silly install resolved     bin: { 'strip-ansi': 'cli.js' },
+691 silly install resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/strip-ansi' },
+691 silly install resolved     author:
+691 silly install resolved      { name: 'Sindre Sorhus',
+691 silly install resolved        email: 'sindresorhus@gmail.com',
+691 silly install resolved        url: 'http://sindresorhus.com' },
+691 silly install resolved     engines: { node: '>=0.10.0' },
+691 silly install resolved     scripts: { test: 'mocha' },
+691 silly install resolved     files: [ 'index.js', 'cli.js' ],
+691 silly install resolved     keywords:
+691 silly install resolved      [ 'strip',
+691 silly install resolved        'trim',
+691 silly install resolved        'remove',
+691 silly install resolved        'ansi',
+691 silly install resolved        'styles',
+691 silly install resolved        'color',
+691 silly install resolved        'colour',
+691 silly install resolved        'colors',
+691 silly install resolved        'terminal',
+691 silly install resolved        'console',
+691 silly install resolved        'cli',
+691 silly install resolved        'string',
+691 silly install resolved        'tty',
+691 silly install resolved        'escape',
+691 silly install resolved        'formatting',
+691 silly install resolved        'rgb',
+691 silly install resolved        '256',
+691 silly install resolved        'shell',
+691 silly install resolved        'xterm',
+691 silly install resolved        'log',
+691 silly install resolved        'logging',
+691 silly install resolved        'command-line',
+691 silly install resolved        'text' ],
+691 silly install resolved     dependencies: { 'ansi-regex': '^0.2.1' },
+691 silly install resolved     devDependencies: { mocha: '*' },
+691 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/strip-ansi/issues' },
+691 silly install resolved     homepage: 'https://github.com/sindresorhus/strip-ansi',
+691 silly install resolved     _id: 'strip-ansi@0.3.0',
+691 silly install resolved     _shasum: '25f48ea22ca79187f3174a4db8759347bb126220',
+691 silly install resolved     _from: 'strip-ansi@>=0.3.0 <0.4.0',
+691 silly install resolved     _npmVersion: '1.4.9',
+691 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+691 silly install resolved     maintainers: [ [Object] ],
+691 silly install resolved     dist:
+691 silly install resolved      { shasum: '25f48ea22ca79187f3174a4db8759347bb126220',
+691 silly install resolved        tarball: 'http://registry.npmjs.org/strip-ansi/-/strip-ansi-0.3.0.tgz' },
+691 silly install resolved     directories: {},
+691 silly install resolved     _resolved: 'https://registry.npmjs.org/strip-ansi/-/strip-ansi-0.3.0.tgz',
+691 silly install resolved     readme: 'ERROR: No README data found!' },
+691 silly install resolved   { name: 'escape-string-regexp',
+691 silly install resolved     version: '1.0.2',
+691 silly install resolved     description: 'Escape RegExp special characters',
+691 silly install resolved     license: 'MIT',
+691 silly install resolved     repository:
+691 silly install resolved      { type: 'git',
+691 silly install resolved        url: 'https://github.com/sindresorhus/escape-string-regexp' },
+691 silly install resolved     author:
+691 silly install resolved      { name: 'Sindre Sorhus',
+691 silly install resolved        email: 'sindresorhus@gmail.com',
+691 silly install resolved        url: 'http://sindresorhus.com' },
+691 silly install resolved     engines: { node: '>=0.8.0' },
+691 silly install resolved     scripts: { test: 'mocha' },
+691 silly install resolved     files: [ 'index.js' ],
+691 silly install resolved     keywords:
+691 silly install resolved      [ 'regex',
+691 silly install resolved        'regexp',
+691 silly install resolved        're',
+691 silly install resolved        'regular',
+691 silly install resolved        'expression',
+691 silly install resolved        'escape',
+691 silly install resolved        'string',
+691 silly install resolved        'str',
+691 silly install resolved        'special',
+691 silly install resolved        'characters' ],
+691 silly install resolved     devDependencies: { mocha: '*' },
+691 silly install resolved     gitHead: '0587ee0ee03ea3fcbfa3c15cf67b47f214e20987',
+691 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/escape-string-regexp/issues' },
+691 silly install resolved     homepage: 'https://github.com/sindresorhus/escape-string-regexp',
+691 silly install resolved     _id: 'escape-string-regexp@1.0.2',
+691 silly install resolved     _shasum: '4dbc2fe674e71949caf3fb2695ce7f2dc1d9a8d1',
+691 silly install resolved     _from: 'escape-string-regexp@>=1.0.0 <2.0.0',
+691 silly install resolved     _npmVersion: '1.4.23',
+691 silly install resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+691 silly install resolved     maintainers: [ [Object], [Object] ],
+691 silly install resolved     dist:
+691 silly install resolved      { shasum: '4dbc2fe674e71949caf3fb2695ce7f2dc1d9a8d1',
+691 silly install resolved        tarball: 'http://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.2.tgz' },
+691 silly install resolved     directories: {},
+691 silly install resolved     _resolved: 'https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.2.tgz',
+691 silly install resolved     readme: 'ERROR: No README data found!' },
+691 silly install resolved   { name: 'supports-color',
+691 silly install resolved     version: '0.2.0',
+691 silly install resolved     description: 'Detect whether a terminal supports color',
+691 silly install resolved     license: 'MIT',
+691 silly install resolved     repository:
+691 silly install resolved      { type: 'git',
+691 silly install resolved        url: 'git://github.com/sindresorhus/supports-color' },
+691 silly install resolved     bin: { 'supports-color': 'cli.js' },
+691 silly install resolved     author:
+691 silly install resolved      { name: 'Sindre Sorhus',
+691 silly install resolved        email: 'sindresorhus@gmail.com',
+691 silly install resolved        url: 'http://sindresorhus.com' },
+691 silly install resolved     engines: { node: '>=0.10.0' },
+691 silly install resolved     scripts: { test: 'mocha' },
+691 silly install resolved     files: [ 'index.js', 'cli.js' ],
+691 silly install resolved     keywords:
+691 silly install resolved      [ 'cli',
+691 silly install resolved        'bin',
+691 silly install resolved        'color',
+691 silly install resolved        'colour',
+691 silly install resolved        'colors',
+691 silly install resolved        'terminal',
+691 silly install resolved        'console',
+691 silly install resolved        'cli',
+691 silly install resolved        'ansi',
+691 silly install resolved        'styles',
+691 silly install resolved        'tty',
+691 silly install resolved        'rgb',
+691 silly install resolved        '256',
+691 silly install resolved        'shell',
+691 silly install resolved        'xterm',
+691 silly install resolved        'command-line',
+691 silly install resolved        'support',
+691 silly install resolved        'supports',
+691 silly install resolved        'capability',
+691 silly install resolved        'detect' ],
+691 silly install resolved     devDependencies: { mocha: '*' },
+691 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/supports-color/issues' },
+691 silly install resolved     homepage: 'https://github.com/sindresorhus/supports-color',
+691 silly install resolved     _id: 'supports-color@0.2.0',
+691 silly install resolved     _shasum: 'd92de2694eb3f67323973d7ae3d8b55b4c22190a',
+691 silly install resolved     _from: 'supports-color@>=0.2.0 <0.3.0',
+691 silly install resolved     _npmVersion: '1.4.9',
+691 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+691 silly install resolved     maintainers: [ [Object] ],
+691 silly install resolved     dist:
+691 silly install resolved      { shasum: 'd92de2694eb3f67323973d7ae3d8b55b4c22190a',
+691 silly install resolved        tarball: 'http://registry.npmjs.org/supports-color/-/supports-color-0.2.0.tgz' },
+691 silly install resolved     directories: {},
+691 silly install resolved     _resolved: 'https://registry.npmjs.org/supports-color/-/supports-color-0.2.0.tgz',
+691 silly install resolved     readme: 'ERROR: No README data found!' } ]
+692 info install has-ansi@0.1.0 into /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+693 info install ansi-styles@1.1.0 into /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+694 info install strip-ansi@0.3.0 into /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+695 info install escape-string-regexp@1.0.2 into /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+696 info install supports-color@0.2.0 into /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+697 info installOne has-ansi@0.1.0
+698 verbose installOne of has-ansi to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk not in flight; installing
+699 info installOne ansi-styles@1.1.0
+700 verbose installOne of ansi-styles to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk not in flight; installing
+701 info installOne strip-ansi@0.3.0
+702 verbose installOne of strip-ansi to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk not in flight; installing
+703 info installOne escape-string-regexp@1.0.2
+704 verbose installOne of escape-string-regexp to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk not in flight; installing
+705 info installOne supports-color@0.2.0
+706 verbose installOne of supports-color to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk not in flight; installing
+707 verbose lock using /home/john/.npm/_locks/get-stdin-b1b6308235440e26.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes/node_modules/get-stdin
+708 warn engine get-stdin@1.0.0: wanted: {"node":">=0.10.0"} (current: {"node":"0.13.0-pre","npm":"2.5.0"})
+709 silly install write writing get-stdin 1.0.0 to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes/node_modules/get-stdin
+710 silly cache addNamed cb get-stdin@1.0.0
+711 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes/node_modules/get-stdin
+712 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes/node_modules/get-stdin
+713 verbose lock using /home/john/.npm/_locks/ansi-styles-578f48a9ffcc9b0d.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/ansi-styles
+714 warn engine ansi-styles@1.1.0: wanted: {"node":">=0.10.0"} (current: {"node":"0.13.0-pre","npm":"2.5.0"})
+715 verbose lock using /home/john/.npm/_locks/escape-string-regexp-12eceb77fa3f0099.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/escape-string-regexp
+716 warn engine escape-string-regexp@1.0.2: wanted: {"node":">=0.8.0"} (current: {"node":"0.13.0-pre","npm":"2.5.0"})
+717 verbose lock using /home/john/.npm/_locks/supports-color-6b27be141c18d236.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/supports-color
+718 warn engine supports-color@0.2.0: wanted: {"node":">=0.10.0"} (current: {"node":"0.13.0-pre","npm":"2.5.0"})
+719 verbose lock using /home/john/.npm/_locks/strip-ansi-d1deeb560646b297.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi
+720 warn engine strip-ansi@0.3.0: wanted: {"node":">=0.10.0"} (current: {"node":"0.13.0-pre","npm":"2.5.0"})
+721 verbose lock using /home/john/.npm/_locks/has-ansi-4b5eeb5eeaa46254.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi
+722 warn engine has-ansi@0.1.0: wanted: {"node":">=0.10.0"} (current: {"node":"0.13.0-pre","npm":"2.5.0"})
+723 verbose tar unpack /home/john/.npm/get-stdin/1.0.0/package.tgz
+724 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes/node_modules/get-stdin
+725 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes/node_modules/get-stdin
+726 silly install write writing ansi-styles 1.1.0 to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/ansi-styles
+727 silly cache addNamed cb ansi-styles@1.1.0
+728 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/ansi-styles
+729 silly install write writing escape-string-regexp 1.0.2 to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/escape-string-regexp
+730 silly cache addNamed cb escape-string-regexp@1.0.2
+731 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/escape-string-regexp
+732 silly install write writing supports-color 0.2.0 to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/supports-color
+733 silly cache addNamed cb supports-color@0.2.0
+734 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/supports-color
+735 silly install write writing strip-ansi 0.3.0 to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi
+736 silly cache addNamed cb strip-ansi@0.3.0
+737 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi
+738 silly install write writing has-ansi 0.1.0 to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi
+739 silly cache addNamed cb has-ansi@0.1.0
+740 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi
+741 silly gunzTarPerm modes [ '755', '644' ]
+742 http 304 https://registry.npmjs.org/meow
+743 silly get cb [ 304,
+743 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+743 silly get     server: 'Apache',
+743 silly get     via: '1.1 varnish',
+743 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:48 GMT',
+743 silly get     'cache-control': 'max-age=60',
+743 silly get     etag: '"3YRMEQHPVTSDKQ9XSBVVC519A"',
+743 silly get     age: '13',
+743 silly get     'x-served-by': 'cache-fra1241-FRA',
+743 silly get     'x-cache': 'HIT',
+743 silly get     'x-cache-hits': '2',
+743 silly get     'x-timer': 'S1423574456.855071,VS0,VE0',
+743 silly get     vary: 'Accept',
+743 silly get     'content-length': '0',
+743 silly get     'keep-alive': 'timeout=10, max=50',
+743 silly get     connection: 'Keep-Alive' } ]
+744 verbose etag https://registry.npmjs.org/meow from cache
+745 verbose get saving meow to /home/john/.npm/registry.npmjs.org/meow/.cache.json
+746 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/ansi-styles
+747 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/escape-string-regexp
+748 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/supports-color
+749 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi
+750 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi
+751 verbose tar unpack /home/john/.npm/ansi-styles/1.1.0/package.tgz
+752 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/ansi-styles
+753 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/ansi-styles
+754 verbose tar unpack /home/john/.npm/escape-string-regexp/1.0.2/package.tgz
+755 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/escape-string-regexp
+756 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/escape-string-regexp
+757 verbose tar unpack /home/john/.npm/supports-color/0.2.0/package.tgz
+758 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/supports-color
+759 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/supports-color
+760 verbose tar unpack /home/john/.npm/strip-ansi/0.3.0/package.tgz
+761 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi
+762 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi
+763 verbose tar unpack /home/john/.npm/has-ansi/0.1.0/package.tgz
+764 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi
+765 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi
+766 silly gunzTarPerm modes [ '755', '644' ]
+767 silly gunzTarPerm modes [ '755', '644' ]
+768 silly gunzTarPerm modes [ '755', '644' ]
+769 http 304 https://registry.npmjs.org/through2
+770 silly get cb [ 304,
+770 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+770 silly get     server: 'Apache',
+770 silly get     via: '1.1 varnish',
+770 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:56 GMT',
+770 silly get     'cache-control': 'max-age=60',
+770 silly get     etag: '"74H9TM45KKQFVZD1B7THIAA0P"',
+770 silly get     age: '14',
+770 silly get     'x-served-by': 'cache-fra1242-FRA',
+770 silly get     'x-cache': 'HIT',
+770 silly get     'x-cache-hits': '1',
+770 silly get     'x-timer': 'S1423574456.858277,VS0,VE0',
+770 silly get     vary: 'Accept',
+770 silly get     'content-length': '0',
+770 silly get     'keep-alive': 'timeout=10, max=50',
+770 silly get     connection: 'Keep-Alive' } ]
+771 verbose etag https://registry.npmjs.org/through2 from cache
+772 verbose get saving through2 to /home/john/.npm/registry.npmjs.org/through2/.cache.json
+773 http 304 https://registry.npmjs.org/vinyl
+774 silly get cb [ 304,
+774 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+774 silly get     server: 'Apache',
+774 silly get     via: '1.1 varnish',
+774 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:29 GMT',
+774 silly get     'cache-control': 'max-age=60',
+774 silly get     etag: '"VR22WPK56H8ZH6QYG6KRY651"',
+774 silly get     age: '33',
+774 silly get     'x-served-by': 'cache-fra1243-FRA',
+774 silly get     'x-cache': 'HIT',
+774 silly get     'x-cache-hits': '3',
+774 silly get     'x-timer': 'S1423574456.859562,VS0,VE0',
+774 silly get     vary: 'Accept',
+774 silly get     'content-length': '0',
+774 silly get     'keep-alive': 'timeout=10, max=50',
+774 silly get     connection: 'Keep-Alive' } ]
+775 verbose etag https://registry.npmjs.org/vinyl from cache
+776 verbose get saving vinyl to /home/john/.npm/registry.npmjs.org/vinyl/.cache.json
+777 silly gunzTarPerm modes [ '755', '644' ]
+778 silly gunzTarPerm modes [ '755', '644' ]
+779 http 304 https://registry.npmjs.org/optional
+780 silly get cb [ 304,
+780 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+780 silly get     server: 'Apache',
+780 silly get     via: '1.1 varnish',
+780 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:56 GMT',
+780 silly get     'cache-control': 'max-age=60',
+780 silly get     etag: '"9ANMD1FXRE5B7PVPEHZCKFWVV"',
+780 silly get     age: '36',
+780 silly get     'x-served-by': 'cache-fra1223-FRA',
+780 silly get     'x-cache': 'HIT',
+780 silly get     'x-cache-hits': '1',
+780 silly get     'x-timer': 'S1423574456.861252,VS0,VE0',
+780 silly get     vary: 'Accept',
+780 silly get     'content-length': '0',
+780 silly get     'keep-alive': 'timeout=10, max=50',
+780 silly get     connection: 'Keep-Alive' } ]
+781 verbose etag https://registry.npmjs.org/optional from cache
+782 verbose get saving optional to /home/john/.npm/registry.npmjs.org/optional/.cache.json
+783 http 304 https://registry.npmjs.org/stream-combiner
+784 silly get cb [ 304,
+784 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+784 silly get     server: 'Apache',
+784 silly get     via: '1.1 varnish',
+784 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:49 GMT',
+784 silly get     'cache-control': 'max-age=60',
+784 silly get     etag: '"4Y0I6748TEWD0UY2ULEQLXFAJ"',
+784 silly get     age: '33',
+784 silly get     'x-served-by': 'cache-fra1224-FRA',
+784 silly get     'x-cache': 'HIT',
+784 silly get     'x-cache-hits': '2',
+784 silly get     'x-timer': 'S1423574456.864245,VS0,VE0',
+784 silly get     vary: 'Accept',
+784 silly get     'content-length': '0',
+784 silly get     'keep-alive': 'timeout=10, max=50',
+784 silly get     connection: 'Keep-Alive' } ]
+785 verbose etag https://registry.npmjs.org/stream-combiner from cache
+786 verbose get saving stream-combiner to /home/john/.npm/registry.npmjs.org/stream-combiner/.cache.json
+787 silly gunzTarPerm extractEntry package.json
+788 http 304 https://registry.npmjs.org/imagemin-jpegtran
+789 silly get cb [ 304,
+789 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+789 silly get     server: 'Apache',
+789 silly get     via: '1.1 varnish',
+789 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:56 GMT',
+789 silly get     'cache-control': 'max-age=60',
+789 silly get     etag: '"9WY71IC2XCGAWTJ7T80U1L3M5"',
+789 silly get     age: '34',
+789 silly get     'x-served-by': 'cache-fra1246-FRA',
+789 silly get     'x-cache': 'HIT',
+789 silly get     'x-cache-hits': '1',
+789 silly get     'x-timer': 'S1423574456.873883,VS0,VE0',
+789 silly get     vary: 'Accept',
+789 silly get     'content-length': '0',
+789 silly get     'keep-alive': 'timeout=10, max=50',
+789 silly get     connection: 'Keep-Alive' } ]
+790 verbose etag https://registry.npmjs.org/imagemin-jpegtran from cache
+791 verbose get saving imagemin-jpegtran to /home/john/.npm/registry.npmjs.org/imagemin-jpegtran/.cache.json
+792 silly gunzTarPerm extractEntry package.json
+793 http 304 https://registry.npmjs.org/vinyl-fs
+794 silly get cb [ 304,
+794 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+794 silly get     server: 'Apache',
+794 silly get     via: '1.1 varnish',
+794 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:56 GMT',
+794 silly get     'cache-control': 'max-age=60',
+794 silly get     etag: '"E3MEQXMUCO15QDC6XT1FHKOU9"',
+794 silly get     age: '11',
+794 silly get     'x-served-by': 'cache-fra1220-FRA',
+794 silly get     'x-cache': 'HIT',
+794 silly get     'x-cache-hits': '1',
+794 silly get     'x-timer': 'S1423574456.874548,VS0,VE0',
+794 silly get     vary: 'Accept',
+794 silly get     'content-length': '0',
+794 silly get     'keep-alive': 'timeout=10, max=50',
+794 silly get     connection: 'Keep-Alive' } ]
+795 verbose etag https://registry.npmjs.org/vinyl-fs from cache
+796 verbose get saving vinyl-fs to /home/john/.npm/registry.npmjs.org/vinyl-fs/.cache.json
+797 http 304 https://registry.npmjs.org/imagemin-gifsicle
+798 silly get cb [ 304,
+798 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+798 silly get     server: 'Apache',
+798 silly get     via: '1.1 varnish',
+798 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:56 GMT',
+798 silly get     'cache-control': 'max-age=60',
+798 silly get     etag: '"9V5YBYG1TV4W1K0QN5127ST31"',
+798 silly get     age: '35',
+798 silly get     'x-served-by': 'cache-fra1231-FRA',
+798 silly get     'x-cache': 'HIT',
+798 silly get     'x-cache-hits': '1',
+798 silly get     'x-timer': 'S1423574456.875435,VS0,VE0',
+798 silly get     vary: 'Accept',
+798 silly get     'content-length': '0',
+798 silly get     'keep-alive': 'timeout=10, max=50',
+798 silly get     connection: 'Keep-Alive' } ]
+799 verbose etag https://registry.npmjs.org/imagemin-gifsicle from cache
+800 verbose get saving imagemin-gifsicle to /home/john/.npm/registry.npmjs.org/imagemin-gifsicle/.cache.json
+801 http 304 https://registry.npmjs.org/imagemin-optipng
+802 silly get cb [ 304,
+802 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+802 silly get     server: 'Apache',
+802 silly get     via: '1.1 varnish',
+802 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:56 GMT',
+802 silly get     'cache-control': 'max-age=60',
+802 silly get     etag: '"B1EWYQA40WBIFP105WBPNNPW0"',
+802 silly get     age: '51',
+802 silly get     'x-served-by': 'cache-fra1243-FRA',
+802 silly get     'x-cache': 'HIT',
+802 silly get     'x-cache-hits': '1',
+802 silly get     'x-timer': 'S1423574456.876175,VS0,VE0',
+802 silly get     vary: 'Accept',
+802 silly get     'content-length': '0',
+802 silly get     'keep-alive': 'timeout=10, max=50',
+802 silly get     connection: 'Keep-Alive' } ]
+803 verbose etag https://registry.npmjs.org/imagemin-optipng from cache
+804 verbose get saving imagemin-optipng to /home/john/.npm/registry.npmjs.org/imagemin-optipng/.cache.json
+805 silly addNameRange number 2 { name: 'meow', range: '>=2.0.0 <3.0.0', hasData: true }
+806 silly addNameRange versions [ 'meow', [ '1.0.0', '2.0.0', '2.1.0', '3.0.0' ] ]
+807 verbose addNamed meow@2.1.0
+808 silly addNamed semver.valid 2.1.0
+809 silly addNamed semver.validRange 2.1.0
+810 silly gunzTarPerm extractEntry index.js
+811 silly gunzTarPerm extractEntry readme.md
+812 silly gunzTarPerm extractEntry package.json
+813 silly gunzTarPerm extractEntry package.json
+814 http 304 https://registry.npmjs.org/imagemin-pngquant
+815 silly get cb [ 304,
+815 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+815 silly get     server: 'Apache',
+815 silly get     via: '1.1 varnish',
+815 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:56 GMT',
+815 silly get     'cache-control': 'max-age=60',
+815 silly get     etag: '"26KAZ7GHZTYIBJDPCSZ274LB1"',
+815 silly get     age: '34',
+815 silly get     'x-served-by': 'cache-fra1223-FRA',
+815 silly get     'x-cache': 'HIT',
+815 silly get     'x-cache-hits': '1',
+815 silly get     'x-timer': 'S1423574456.877765,VS0,VE0',
+815 silly get     vary: 'Accept',
+815 silly get     'content-length': '0',
+815 silly get     'keep-alive': 'timeout=10, max=50',
+815 silly get     connection: 'Keep-Alive' } ]
+816 verbose etag https://registry.npmjs.org/imagemin-pngquant from cache
+817 verbose get saving imagemin-pngquant to /home/john/.npm/registry.npmjs.org/imagemin-pngquant/.cache.json
+818 http 304 https://registry.npmjs.org/imagemin-svgo
+819 silly get cb [ 304,
+819 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+819 silly get     server: 'Apache',
+819 silly get     via: '1.1 varnish',
+819 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:56 GMT',
+819 silly get     'cache-control': 'max-age=60',
+819 silly get     etag: '"475UP5BGSL343PT9PQ0RQ17YQ"',
+819 silly get     age: '35',
+819 silly get     'x-served-by': 'cache-fra1226-FRA',
+819 silly get     'x-cache': 'HIT',
+819 silly get     'x-cache-hits': '1',
+819 silly get     'x-timer': 'S1423574456.878272,VS0,VE0',
+819 silly get     vary: 'Accept',
+819 silly get     'content-length': '0',
+819 silly get     'keep-alive': 'timeout=10, max=50',
+819 silly get     connection: 'Keep-Alive' } ]
+820 verbose etag https://registry.npmjs.org/imagemin-svgo from cache
+821 verbose get saving imagemin-svgo to /home/john/.npm/registry.npmjs.org/imagemin-svgo/.cache.json
+822 silly gunzTarPerm extractEntry package.json
+823 silly gunzTarPerm extractEntry package.json
+824 silly addNameRange number 2 { name: 'through2', range: '>=0.6.1 <0.7.0', hasData: true }
+825 silly addNameRange versions [ 'through2',
+825 silly addNameRange   [ '0.0.0',
+825 silly addNameRange     '0.0.1',
+825 silly addNameRange     '0.0.2',
+825 silly addNameRange     '0.0.3',
+825 silly addNameRange     '0.0.4',
+825 silly addNameRange     '0.0.5',
+825 silly addNameRange     '0.1.0',
+825 silly addNameRange     '0.2.0',
+825 silly addNameRange     '0.2.1',
+825 silly addNameRange     '0.2.2',
+825 silly addNameRange     '0.2.3',
+825 silly addNameRange     '0.3.0',
+825 silly addNameRange     '0.4.0',
+825 silly addNameRange     '0.4.1',
+825 silly addNameRange     '1.0.0',
+825 silly addNameRange     '0.4.2',
+825 silly addNameRange     '0.5.0',
+825 silly addNameRange     '0.5.1',
+825 silly addNameRange     '0.6.0',
+825 silly addNameRange     '1.1.0',
+825 silly addNameRange     '0.6.1',
+825 silly addNameRange     '1.1.1',
+825 silly addNameRange     '0.6.2',
+825 silly addNameRange     '0.6.3' ] ]
+826 verbose addNamed through2@0.6.3
+827 silly addNamed semver.valid 0.6.3
+828 silly addNamed semver.validRange 0.6.3
+829 silly addNameRange number 2 { name: 'vinyl', range: '>=0.4.3 <0.5.0', hasData: true }
+830 silly addNameRange versions [ 'vinyl',
+830 silly addNameRange   [ '0.1.0',
+830 silly addNameRange     '0.2.0',
+830 silly addNameRange     '0.2.1',
+830 silly addNameRange     '0.2.2',
+830 silly addNameRange     '0.2.3',
+830 silly addNameRange     '0.3.0',
+830 silly addNameRange     '0.3.1',
+830 silly addNameRange     '0.3.2',
+830 silly addNameRange     '0.3.3',
+830 silly addNameRange     '0.4.0',
+830 silly addNameRange     '0.4.1',
+830 silly addNameRange     '0.4.2',
+830 silly addNameRange     '0.4.3',
+830 silly addNameRange     '0.4.4',
+830 silly addNameRange     '0.4.5',
+830 silly addNameRange     '0.4.6' ] ]
+831 verbose addNamed vinyl@0.4.6
+832 silly addNamed semver.valid 0.4.6
+833 silly addNamed semver.validRange 0.4.6
+834 silly gunzTarPerm extractEntry index.js
+835 silly gunzTarPerm extractEntry readme.md
+836 silly addNameRange number 2 { name: 'stream-combiner',
+836 silly addNameRange   range: '>=0.2.1 <0.3.0',
+836 silly addNameRange   hasData: true }
+837 silly addNameRange versions [ 'stream-combiner',
+837 silly addNameRange   [ '0.0.0', '0.0.1', '0.0.2', '0.0.4', '0.1.0', '0.2.0', '0.2.1' ] ]
+838 verbose addNamed stream-combiner@0.2.1
+839 silly addNamed semver.valid 0.2.1
+840 silly addNamed semver.validRange 0.2.1
+841 silly addNameRange number 2 { name: 'optional', range: '>=0.1.0 <0.2.0', hasData: true }
+842 silly addNameRange versions [ 'optional',
+842 silly addNameRange   [ '0.1.0-1', '0.1.0-2', '0.1.0', '0.1.1', '0.1.2' ] ]
+843 verbose addNamed optional@0.1.2
+844 silly addNamed semver.valid 0.1.2
+845 silly addNamed semver.validRange 0.1.2
+846 silly gunzTarPerm extractEntry index.js
+847 silly gunzTarPerm extractEntry readme.md
+848 silly gunzTarPerm extractEntry cli.js
+849 silly gunzTarPerm extractEntry index.js
+850 silly gunzTarPerm extractEntry cli.js
+851 silly gunzTarPerm extractEntry index.js
+852 silly gunzTarPerm extractEntry cli.js
+853 silly gunzTarPerm extractEntry index.js
+854 silly cache afterAdd meow@2.1.0
+855 verbose afterAdd /home/john/.npm/meow/2.1.0/package/package.json not in flight; writing
+856 silly addNameRange number 2 { name: 'imagemin-jpegtran',
+856 silly addNameRange   range: '>=4.0.0 <5.0.0',
+856 silly addNameRange   hasData: true }
+857 silly addNameRange versions [ 'imagemin-jpegtran',
+857 silly addNameRange   [ '0.1.0',
+857 silly addNameRange     '1.0.0',
+857 silly addNameRange     '2.0.0',
+857 silly addNameRange     '3.0.0',
+857 silly addNameRange     '3.1.0',
+857 silly addNameRange     '3.1.1',
+857 silly addNameRange     '4.0.0',
+857 silly addNameRange     '4.1.0' ] ]
+858 verbose addNamed imagemin-jpegtran@4.1.0
+859 silly addNamed semver.valid 4.1.0
+860 silly addNamed semver.validRange 4.1.0
+861 silly addNameRange number 2 { name: 'imagemin-gifsicle',
+861 silly addNameRange   range: '>=4.0.0 <5.0.0',
+861 silly addNameRange   hasData: true }
+862 silly addNameRange versions [ 'imagemin-gifsicle',
+862 silly addNameRange   [ '0.1.0',
+862 silly addNameRange     '0.1.1',
+862 silly addNameRange     '1.0.0',
+862 silly addNameRange     '2.0.0',
+862 silly addNameRange     '2.0.1',
+862 silly addNameRange     '3.0.0',
+862 silly addNameRange     '3.1.0',
+862 silly addNameRange     '4.0.0',
+862 silly addNameRange     '4.1.0' ] ]
+863 verbose addNamed imagemin-gifsicle@4.1.0
+864 silly addNamed semver.valid 4.1.0
+865 silly addNamed semver.validRange 4.1.0
+866 silly addNameRange number 2 { name: 'imagemin-optipng',
+866 silly addNameRange   range: '>=4.0.0 <5.0.0',
+866 silly addNameRange   hasData: true }
+867 silly addNameRange versions [ 'imagemin-optipng',
+867 silly addNameRange   [ '0.1.0',
+867 silly addNameRange     '1.0.0',
+867 silly addNameRange     '2.0.0',
+867 silly addNameRange     '2.0.1',
+867 silly addNameRange     '3.0.0',
+867 silly addNameRange     '3.1.0',
+867 silly addNameRange     '4.0.0',
+867 silly addNameRange     '4.1.0',
+867 silly addNameRange     '4.2.0' ] ]
+868 verbose addNamed imagemin-optipng@4.2.0
+869 silly addNamed semver.valid 4.2.0
+870 silly addNamed semver.validRange 4.2.0
+871 silly addNameRange number 2 { name: 'vinyl-fs', range: '>=0.3.7 <0.4.0', hasData: true }
+872 silly addNameRange versions [ 'vinyl-fs', [ '0.0.1', '0.0.2', '0.1.0' ] ]
+873 silly cache afterAdd through2@0.6.3
+874 verbose afterAdd /home/john/.npm/through2/0.6.3/package/package.json not in flight; writing
+875 silly cache afterAdd vinyl@0.4.6
+876 verbose afterAdd /home/john/.npm/vinyl/0.4.6/package/package.json not in flight; writing
+877 silly addNameRange number 2 { name: 'imagemin-svgo', range: '>=4.0.0 <5.0.0', hasData: true }
+878 silly addNameRange versions [ 'imagemin-svgo',
+878 silly addNameRange   [ '0.1.0',
+878 silly addNameRange     '0.1.1',
+878 silly addNameRange     '1.0.0',
+878 silly addNameRange     '1.0.1',
+878 silly addNameRange     '1.0.2',
+878 silly addNameRange     '2.0.0',
+878 silly addNameRange     '2.1.0',
+878 silly addNameRange     '3.0.0',
+878 silly addNameRange     '3.0.1',
+878 silly addNameRange     '3.0.2',
+878 silly addNameRange     '3.0.3',
+878 silly addNameRange     '4.0.0',
+878 silly addNameRange     '4.0.1',
+878 silly addNameRange     '4.0.2',
+878 silly addNameRange     '4.1.0' ] ]
+879 verbose addNamed imagemin-svgo@4.1.0
+880 silly addNamed semver.valid 4.1.0
+881 silly addNamed semver.validRange 4.1.0
+882 silly addNameRange number 2 { name: 'imagemin-pngquant',
+882 silly addNameRange   range: '>=4.0.0 <5.0.0',
+882 silly addNameRange   hasData: true }
+883 silly addNameRange versions [ 'imagemin-pngquant',
+883 silly addNameRange   [ '0.1.0',
+883 silly addNameRange     '0.1.1',
+883 silly addNameRange     '0.1.2',
+883 silly addNameRange     '0.1.3',
+883 silly addNameRange     '1.0.0',
+883 silly addNameRange     '1.0.1',
+883 silly addNameRange     '1.0.2',
+883 silly addNameRange     '2.0.0',
+883 silly addNameRange     '2.0.1',
+883 silly addNameRange     '3.0.0',
+883 silly addNameRange     '3.1.0',
+883 silly addNameRange     '4.0.0' ] ]
+884 verbose addNamed imagemin-pngquant@4.0.0
+885 silly addNamed semver.valid 4.0.0
+886 silly addNamed semver.validRange 4.0.0
+887 silly cache afterAdd stream-combiner@0.2.1
+888 verbose afterAdd /home/john/.npm/stream-combiner/0.2.1/package/package.json not in flight; writing
+889 silly cache afterAdd optional@0.1.2
+890 verbose afterAdd /home/john/.npm/optional/0.1.2/package/package.json not in flight; writing
+891 verbose afterAdd /home/john/.npm/meow/2.1.0/package/package.json written
+892 silly cache afterAdd imagemin-jpegtran@4.1.0
+893 verbose afterAdd /home/john/.npm/imagemin-jpegtran/4.1.0/package/package.json not in flight; writing
+894 silly gunzTarPerm extractEntry readme.md
+895 verbose afterAdd /home/john/.npm/through2/0.6.3/package/package.json written
+896 verbose afterAdd /home/john/.npm/vinyl/0.4.6/package/package.json written
+897 silly cache afterAdd imagemin-gifsicle@4.1.0
+898 verbose afterAdd /home/john/.npm/imagemin-gifsicle/4.1.0/package/package.json not in flight; writing
+899 silly cache afterAdd imagemin-optipng@4.2.0
+900 verbose afterAdd /home/john/.npm/imagemin-optipng/4.2.0/package/package.json not in flight; writing
+901 silly gunzTarPerm extractEntry readme.md
+902 silly gunzTarPerm extractEntry readme.md
+903 silly cache afterAdd imagemin-svgo@4.1.0
+904 verbose afterAdd /home/john/.npm/imagemin-svgo/4.1.0/package/package.json not in flight; writing
+905 silly cache afterAdd imagemin-pngquant@4.0.0
+906 verbose afterAdd /home/john/.npm/imagemin-pngquant/4.0.0/package/package.json not in flight; writing
+907 verbose afterAdd /home/john/.npm/stream-combiner/0.2.1/package/package.json written
+908 verbose afterAdd /home/john/.npm/optional/0.1.2/package/package.json written
+909 verbose afterAdd /home/john/.npm/imagemin-jpegtran/4.1.0/package/package.json written
+910 verbose afterAdd /home/john/.npm/imagemin-gifsicle/4.1.0/package/package.json written
+911 verbose afterAdd /home/john/.npm/imagemin-optipng/4.2.0/package/package.json written
+912 verbose afterAdd /home/john/.npm/imagemin-svgo/4.1.0/package/package.json written
+913 verbose afterAdd /home/john/.npm/imagemin-pngquant/4.0.0/package/package.json written
+914 info preinstall get-stdin@1.0.0
+915 silly install resolved []
+916 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes/node_modules/get-stdin
+917 info build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes/node_modules/get-stdin
+918 verbose linkStuff [ true,
+918 verbose linkStuff   '/usr/local/lib/node_modules',
+918 verbose linkStuff   false,
+918 verbose linkStuff   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes/node_modules' ]
+919 info linkStuff get-stdin@1.0.0
+920 verbose linkBins get-stdin@1.0.0
+921 verbose linkMans get-stdin@1.0.0
+922 verbose rebuildBundles get-stdin@1.0.0
+923 info preinstall escape-string-regexp@1.0.2
+924 info install get-stdin@1.0.0
+925 info preinstall ansi-styles@1.1.0
+926 info postinstall get-stdin@1.0.0
+927 silly install resolved []
+928 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/escape-string-regexp
+929 info build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/escape-string-regexp
+930 verbose linkStuff [ true,
+930 verbose linkStuff   '/usr/local/lib/node_modules',
+930 verbose linkStuff   false,
+930 verbose linkStuff   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules' ]
+931 info linkStuff escape-string-regexp@1.0.2
+932 verbose linkBins escape-string-regexp@1.0.2
+933 verbose linkMans escape-string-regexp@1.0.2
+934 verbose rebuildBundles escape-string-regexp@1.0.2
+935 http 304 https://registry.npmjs.org/concat-stream
+936 silly get cb [ 304,
+936 silly get   { date: 'Tue, 10 Feb 2015 13:20:56 GMT',
+936 silly get     server: 'Apache',
+936 silly get     via: '1.1 varnish',
+936 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:56 GMT',
+936 silly get     'cache-control': 'max-age=60',
+936 silly get     etag: '"DAU0CXDGWJRJRHE8GJ2VBNR99"',
+936 silly get     age: '18',
+936 silly get     'x-served-by': 'cache-fra1226-FRA',
+936 silly get     'x-cache': 'HIT',
+936 silly get     'x-cache-hits': '1',
+936 silly get     'x-timer': 'S1423574456.979772,VS0,VE0',
+936 silly get     vary: 'Accept',
+936 silly get     'content-length': '0',
+936 silly get     'keep-alive': 'timeout=10, max=50',
+936 silly get     connection: 'Keep-Alive' } ]
+937 verbose etag https://registry.npmjs.org/concat-stream from cache
+938 verbose get saving concat-stream to /home/john/.npm/registry.npmjs.org/concat-stream/.cache.json
+939 info install escape-string-regexp@1.0.2
+940 silly install resolved []
+941 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/ansi-styles
+942 info build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/ansi-styles
+943 verbose linkStuff [ true,
+943 verbose linkStuff   '/usr/local/lib/node_modules',
+943 verbose linkStuff   false,
+943 verbose linkStuff   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules' ]
+944 info linkStuff ansi-styles@1.1.0
+945 verbose linkBins ansi-styles@1.1.0
+946 verbose linkMans ansi-styles@1.1.0
+947 verbose rebuildBundles ansi-styles@1.1.0
+948 verbose unlock done using /home/john/.npm/_locks/get-stdin-b1b6308235440e26.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes/node_modules/get-stdin
+949 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes
+950 info build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes
+951 verbose linkStuff [ true,
+951 verbose linkStuff   '/usr/local/lib/node_modules',
+951 verbose linkStuff   false,
+951 verbose linkStuff   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules' ]
+952 info linkStuff pretty-bytes@1.0.2
+953 verbose linkBins pretty-bytes@1.0.2
+954 verbose link bins [ { 'pretty-bytes': 'cli.js' },
+954 verbose link bins   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/.bin',
+954 verbose link bins   false ]
+955 verbose linkMans pretty-bytes@1.0.2
+956 verbose rebuildBundles pretty-bytes@1.0.2
+957 info install ansi-styles@1.1.0
+958 verbose rebuildBundles [ 'get-stdin' ]
+959 info postinstall escape-string-regexp@1.0.2
+960 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/.bin/pretty-bytes
+961 info postinstall ansi-styles@1.1.0
+962 info preinstall supports-color@0.2.0
+963 info preinstall strip-ansi@0.3.0
+964 info preinstall has-ansi@0.1.0
+965 verbose unlock done using /home/john/.npm/_locks/escape-string-regexp-12eceb77fa3f0099.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/escape-string-regexp
+966 verbose unlock done using /home/john/.npm/_locks/ansi-styles-578f48a9ffcc9b0d.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/ansi-styles
+967 silly prepareForInstallMany adding ansi-regex@^0.2.1 from strip-ansi dependencies
+968 silly prepareForInstallMany adding ansi-regex@^0.2.0 from has-ansi dependencies
+969 info install pretty-bytes@1.0.2
+970 silly install resolved []
+971 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/supports-color
+972 info build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/supports-color
+973 verbose linkStuff [ true,
+973 verbose linkStuff   '/usr/local/lib/node_modules',
+973 verbose linkStuff   false,
+973 verbose linkStuff   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules' ]
+974 info linkStuff supports-color@0.2.0
+975 verbose linkBins supports-color@0.2.0
+976 verbose link bins [ { 'supports-color': 'cli.js' },
+976 verbose link bins   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/.bin',
+976 verbose link bins   false ]
+977 verbose linkMans supports-color@0.2.0
+978 verbose rebuildBundles supports-color@0.2.0
+979 silly addNameRange number 2 { name: 'concat-stream', range: '>=1.4.6 <2.0.0', hasData: true }
+980 silly addNameRange versions [ 'concat-stream',
+980 silly addNameRange   [ '0.0.1',
+980 silly addNameRange     '0.0.2',
+980 silly addNameRange     '0.0.3',
+980 silly addNameRange     '0.0.4',
+980 silly addNameRange     '0.0.5',
+980 silly addNameRange     '0.0.6',
+980 silly addNameRange     '0.0.7',
+980 silly addNameRange     '0.0.8',
+980 silly addNameRange     '0.0.9',
+980 silly addNameRange     '0.1.0',
+980 silly addNameRange     '0.1.1',
+980 silly addNameRange     '1.0.0',
+980 silly addNameRange     '1.0.1',
+980 silly addNameRange     '1.1.0',
+980 silly addNameRange     '1.2.0',
+980 silly addNameRange     '1.2.1',
+980 silly addNameRange     '1.3.0',
+980 silly addNameRange     '1.3.1',
+980 silly addNameRange     '1.4.0',
+980 silly addNameRange     '1.4.1',
+980 silly addNameRange     '1.4.2',
+980 silly addNameRange     '1.4.3',
+980 silly addNameRange     '1.4.4',
+980 silly addNameRange     '1.4.5',
+980 silly addNameRange     '1.4.6',
+980 silly addNameRange     '1.4.7' ] ]
+981 verbose addNamed concat-stream@1.4.7
+982 silly addNamed semver.valid 1.4.7
+983 silly addNamed semver.validRange 1.4.7
+984 info postinstall pretty-bytes@1.0.2
+985 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/.bin/supports-color
+986 silly cache add args [ 'ansi-regex@^0.2.1', null ]
+987 verbose cache add spec ansi-regex@^0.2.1
+988 silly cache add args [ 'ansi-regex@^0.2.0', null ]
+989 verbose cache add spec ansi-regex@^0.2.0
+990 silly cache add parsed spec { raw: 'ansi-regex@^0.2.1',
+990 silly cache add   scope: null,
+990 silly cache add   name: 'ansi-regex',
+990 silly cache add   rawSpec: '^0.2.1',
+990 silly cache add   spec: '>=0.2.1 <0.3.0',
+990 silly cache add   type: 'range' }
+991 verbose addNamed ansi-regex@>=0.2.1 <0.3.0
+992 silly addNamed semver.valid null
+993 silly addNamed semver.validRange >=0.2.1 <0.3.0
+994 silly addNameRange { name: 'ansi-regex', range: '>=0.2.1 <0.3.0', hasData: false }
+995 silly mapToRegistry name ansi-regex
+996 silly mapToRegistry using default registry
+997 silly mapToRegistry registry https://registry.npmjs.org/
+998 silly mapToRegistry uri https://registry.npmjs.org/ansi-regex
+999 verbose addNameRange registry:https://registry.npmjs.org/ansi-regex not in flight; fetching
+1000 silly cache add parsed spec { raw: 'ansi-regex@^0.2.0',
+1000 silly cache add   scope: null,
+1000 silly cache add   name: 'ansi-regex',
+1000 silly cache add   rawSpec: '^0.2.0',
+1000 silly cache add   spec: '>=0.2.0 <0.3.0',
+1000 silly cache add   type: 'range' }
+1001 verbose addNamed ansi-regex@>=0.2.0 <0.3.0
+1002 silly addNamed semver.valid null
+1003 silly addNamed semver.validRange >=0.2.0 <0.3.0
+1004 silly addNameRange { name: 'ansi-regex', range: '>=0.2.0 <0.3.0', hasData: false }
+1005 silly mapToRegistry name ansi-regex
+1006 silly mapToRegistry using default registry
+1007 silly mapToRegistry registry https://registry.npmjs.org/
+1008 silly mapToRegistry uri https://registry.npmjs.org/ansi-regex
+1009 verbose addNameRange registry:https://registry.npmjs.org/ansi-regex already in flight; waiting
+1010 verbose unlock done using /home/john/.npm/_locks/pretty-bytes-b35077dac8a2f67b.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/pretty-bytes
+1011 silly cache afterAdd concat-stream@1.4.7
+1012 verbose afterAdd /home/john/.npm/concat-stream/1.4.7/package/package.json not in flight; writing
+1013 info install supports-color@0.2.0
+1014 verbose request uri https://registry.npmjs.org/ansi-regex
+1015 verbose request no auth needed
+1016 info attempt registry request try #1 at 14:20:56
+1017 verbose etag "2SMG686K1IF7DVZ2UJIA2GM20"
+1018 http request GET https://registry.npmjs.org/ansi-regex
+1019 info postinstall supports-color@0.2.0
+1020 verbose afterAdd /home/john/.npm/concat-stream/1.4.7/package/package.json written
+1021 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/imagemin
+1022 verbose unlock done using /home/john/.npm/_locks/supports-color-6b27be141c18d236.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/supports-color
+1023 verbose unlock done using /home/john/.npm/_locks/imagemin-9cce74265a2a148a.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/imagemin
+1024 http 304 https://registry.npmjs.org/ansi-regex
+1025 silly get cb [ 304,
+1025 silly get   { date: 'Tue, 10 Feb 2015 13:20:57 GMT',
+1025 silly get     server: 'Apache',
+1025 silly get     via: '1.1 varnish',
+1025 silly get     'last-modified': 'Tue, 10 Feb 2015 13:20:23 GMT',
+1025 silly get     'cache-control': 'max-age=60',
+1025 silly get     etag: '"2SMG686K1IF7DVZ2UJIA2GM20"',
+1025 silly get     age: '55',
+1025 silly get     'x-served-by': 'cache-fra1231-FRA',
+1025 silly get     'x-cache': 'HIT',
+1025 silly get     'x-cache-hits': '3',
+1025 silly get     'x-timer': 'S1423574457.156292,VS0,VE0',
+1025 silly get     vary: 'Accept',
+1025 silly get     'content-length': '0',
+1025 silly get     'keep-alive': 'timeout=10, max=50',
+1025 silly get     connection: 'Keep-Alive' } ]
+1026 verbose etag https://registry.npmjs.org/ansi-regex from cache
+1027 verbose get saving ansi-regex to /home/john/.npm/registry.npmjs.org/ansi-regex/.cache.json
+1028 silly addNameRange number 2 { name: 'ansi-regex', range: '>=0.2.1 <0.3.0', hasData: true }
+1029 silly addNameRange versions [ 'ansi-regex',
+1029 silly addNameRange   [ '0.1.0', '0.2.0', '0.2.1', '1.0.0', '1.1.0' ] ]
+1030 verbose addNamed ansi-regex@0.2.1
+1031 silly addNamed semver.valid 0.2.1
+1032 silly addNamed semver.validRange 0.2.1
+1033 silly addNameRange number 2 { name: 'ansi-regex', range: '>=0.2.0 <0.3.0', hasData: true }
+1034 silly addNameRange versions [ 'ansi-regex',
+1034 silly addNameRange   [ '0.1.0', '0.2.0', '0.2.1', '1.0.0', '1.1.0' ] ]
+1035 verbose addNamed ansi-regex@0.2.1
+1036 silly addNamed semver.valid 0.2.1
+1037 silly addNamed semver.validRange 0.2.1
+1038 silly cache afterAdd ansi-regex@0.2.1
+1039 verbose afterAdd /home/john/.npm/ansi-regex/0.2.1/package/package.json not in flight; writing
+1040 silly cache afterAdd ansi-regex@0.2.1
+1041 verbose afterAdd /home/john/.npm/ansi-regex/0.2.1/package/package.json already in flight; not writing
+1042 verbose afterAdd /home/john/.npm/ansi-regex/0.2.1/package/package.json written
+1043 silly install resolved [ { name: 'ansi-regex',
+1043 silly install resolved     version: '0.2.1',
+1043 silly install resolved     description: 'Regular expression for matching ANSI escape codes',
+1043 silly install resolved     license: 'MIT',
+1043 silly install resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/ansi-regex' },
+1043 silly install resolved     author:
+1043 silly install resolved      { name: 'Sindre Sorhus',
+1043 silly install resolved        email: 'sindresorhus@gmail.com',
+1043 silly install resolved        url: 'http://sindresorhus.com' },
+1043 silly install resolved     engines: { node: '>=0.10.0' },
+1043 silly install resolved     scripts: { test: 'mocha' },
+1043 silly install resolved     files: [ 'index.js' ],
+1043 silly install resolved     keywords:
+1043 silly install resolved      [ 'ansi',
+1043 silly install resolved        'styles',
+1043 silly install resolved        'color',
+1043 silly install resolved        'colour',
+1043 silly install resolved        'colors',
+1043 silly install resolved        'terminal',
+1043 silly install resolved        'console',
+1043 silly install resolved        'cli',
+1043 silly install resolved        'string',
+1043 silly install resolved        'tty',
+1043 silly install resolved        'escape',
+1043 silly install resolved        'formatting',
+1043 silly install resolved        'rgb',
+1043 silly install resolved        '256',
+1043 silly install resolved        'shell',
+1043 silly install resolved        'xterm',
+1043 silly install resolved        'command-line',
+1043 silly install resolved        'text',
+1043 silly install resolved        'regex',
+1043 silly install resolved        'regexp',
+1043 silly install resolved        're',
+1043 silly install resolved        'match',
+1043 silly install resolved        'test',
+1043 silly install resolved        'find',
+1043 silly install resolved        'pattern' ],
+1043 silly install resolved     devDependencies: { mocha: '*' },
+1043 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/ansi-regex/issues' },
+1043 silly install resolved     homepage: 'https://github.com/sindresorhus/ansi-regex',
+1043 silly install resolved     _id: 'ansi-regex@0.2.1',
+1043 silly install resolved     _shasum: '0d8e946967a3d8143f93e24e298525fc1b2235f9',
+1043 silly install resolved     _from: 'ansi-regex@>=0.2.1 <0.3.0',
+1043 silly install resolved     _npmVersion: '1.4.9',
+1043 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+1043 silly install resolved     maintainers: [ [Object] ],
+1043 silly install resolved     dist:
+1043 silly install resolved      { shasum: '0d8e946967a3d8143f93e24e298525fc1b2235f9',
+1043 silly install resolved        tarball: 'http://registry.npmjs.org/ansi-regex/-/ansi-regex-0.2.1.tgz' },
+1043 silly install resolved     directories: {},
+1043 silly install resolved     _resolved: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-0.2.1.tgz',
+1043 silly install resolved     readme: 'ERROR: No README data found!' } ]
+1044 info install ansi-regex@0.2.1 into /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi
+1045 info installOne ansi-regex@0.2.1
+1046 verbose installOne of ansi-regex to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi not in flight; installing
+1047 silly install resolved [ { name: 'ansi-regex',
+1047 silly install resolved     version: '0.2.1',
+1047 silly install resolved     description: 'Regular expression for matching ANSI escape codes',
+1047 silly install resolved     license: 'MIT',
+1047 silly install resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/ansi-regex' },
+1047 silly install resolved     author:
+1047 silly install resolved      { name: 'Sindre Sorhus',
+1047 silly install resolved        email: 'sindresorhus@gmail.com',
+1047 silly install resolved        url: 'http://sindresorhus.com' },
+1047 silly install resolved     engines: { node: '>=0.10.0' },
+1047 silly install resolved     scripts: { test: 'mocha' },
+1047 silly install resolved     files: [ 'index.js' ],
+1047 silly install resolved     keywords:
+1047 silly install resolved      [ 'ansi',
+1047 silly install resolved        'styles',
+1047 silly install resolved        'color',
+1047 silly install resolved        'colour',
+1047 silly install resolved        'colors',
+1047 silly install resolved        'terminal',
+1047 silly install resolved        'console',
+1047 silly install resolved        'cli',
+1047 silly install resolved        'string',
+1047 silly install resolved        'tty',
+1047 silly install resolved        'escape',
+1047 silly install resolved        'formatting',
+1047 silly install resolved        'rgb',
+1047 silly install resolved        '256',
+1047 silly install resolved        'shell',
+1047 silly install resolved        'xterm',
+1047 silly install resolved        'command-line',
+1047 silly install resolved        'text',
+1047 silly install resolved        'regex',
+1047 silly install resolved        'regexp',
+1047 silly install resolved        're',
+1047 silly install resolved        'match',
+1047 silly install resolved        'test',
+1047 silly install resolved        'find',
+1047 silly install resolved        'pattern' ],
+1047 silly install resolved     devDependencies: { mocha: '*' },
+1047 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/ansi-regex/issues' },
+1047 silly install resolved     homepage: 'https://github.com/sindresorhus/ansi-regex',
+1047 silly install resolved     _id: 'ansi-regex@0.2.1',
+1047 silly install resolved     _shasum: '0d8e946967a3d8143f93e24e298525fc1b2235f9',
+1047 silly install resolved     _from: 'ansi-regex@>=0.2.1 <0.3.0',
+1047 silly install resolved     _npmVersion: '1.4.9',
+1047 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+1047 silly install resolved     maintainers: [ [Object] ],
+1047 silly install resolved     dist:
+1047 silly install resolved      { shasum: '0d8e946967a3d8143f93e24e298525fc1b2235f9',
+1047 silly install resolved        tarball: 'http://registry.npmjs.org/ansi-regex/-/ansi-regex-0.2.1.tgz' },
+1047 silly install resolved     directories: {},
+1047 silly install resolved     _resolved: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-0.2.1.tgz',
+1047 silly install resolved     readme: 'ERROR: No README data found!' } ]
+1048 info install ansi-regex@0.2.1 into /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi
+1049 info installOne ansi-regex@0.2.1
+1050 verbose installOne of ansi-regex to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi not in flight; installing
+1051 verbose lock using /home/john/.npm/_locks/ansi-regex-8ce415f8b8fe60ff.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+1052 warn engine ansi-regex@0.2.1: wanted: {"node":">=0.10.0"} (current: {"node":"0.13.0-pre","npm":"2.5.0"})
+1053 verbose lock using /home/john/.npm/_locks/ansi-regex-ef12bc21914ee82e.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+1054 warn engine ansi-regex@0.2.1: wanted: {"node":">=0.10.0"} (current: {"node":"0.13.0-pre","npm":"2.5.0"})
+1055 silly install write writing ansi-regex 0.2.1 to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+1056 silly cache addNamed cb ansi-regex@0.2.1
+1057 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+1058 silly install write writing ansi-regex 0.2.1 to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+1059 silly cache addNamed cb ansi-regex@0.2.1
+1060 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+1061 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+1062 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+1063 verbose tar unpack /home/john/.npm/ansi-regex/0.2.1/package.tgz
+1064 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+1065 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+1066 verbose tar unpack /home/john/.npm/ansi-regex/0.2.1/package.tgz
+1067 verbose tar unpacking to /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+1068 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+1069 silly gunzTarPerm modes [ '755', '644' ]
+1070 silly gunzTarPerm modes [ '755', '644' ]
+1071 silly gunzTarPerm extractEntry package.json
+1072 silly gunzTarPerm extractEntry package.json
+1073 silly gunzTarPerm extractEntry index.js
+1074 silly gunzTarPerm extractEntry readme.md
+1075 silly gunzTarPerm extractEntry index.js
+1076 silly gunzTarPerm extractEntry readme.md
+1077 info preinstall ansi-regex@0.2.1
+1078 info preinstall ansi-regex@0.2.1
+1079 silly install resolved []
+1080 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+1081 info build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+1082 verbose linkStuff [ true,
+1082 verbose linkStuff   '/usr/local/lib/node_modules',
+1082 verbose linkStuff   false,
+1082 verbose linkStuff   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi/node_modules' ]
+1083 info linkStuff ansi-regex@0.2.1
+1084 verbose linkBins ansi-regex@0.2.1
+1085 verbose linkMans ansi-regex@0.2.1
+1086 verbose rebuildBundles ansi-regex@0.2.1
+1087 info install ansi-regex@0.2.1
+1088 silly install resolved []
+1089 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+1090 info build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+1091 verbose linkStuff [ true,
+1091 verbose linkStuff   '/usr/local/lib/node_modules',
+1091 verbose linkStuff   false,
+1091 verbose linkStuff   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi/node_modules' ]
+1092 info linkStuff ansi-regex@0.2.1
+1093 verbose linkBins ansi-regex@0.2.1
+1094 verbose linkMans ansi-regex@0.2.1
+1095 verbose rebuildBundles ansi-regex@0.2.1
+1096 info install ansi-regex@0.2.1
+1097 info postinstall ansi-regex@0.2.1
+1098 info postinstall ansi-regex@0.2.1
+1099 verbose unlock done using /home/john/.npm/_locks/ansi-regex-8ce415f8b8fe60ff.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+1100 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi
+1101 info build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi
+1102 verbose linkStuff [ true,
+1102 verbose linkStuff   '/usr/local/lib/node_modules',
+1102 verbose linkStuff   false,
+1102 verbose linkStuff   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules' ]
+1103 info linkStuff strip-ansi@0.3.0
+1104 verbose linkBins strip-ansi@0.3.0
+1105 verbose link bins [ { 'strip-ansi': 'cli.js' },
+1105 verbose link bins   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/.bin',
+1105 verbose link bins   false ]
+1106 verbose linkMans strip-ansi@0.3.0
+1107 verbose rebuildBundles strip-ansi@0.3.0
+1108 verbose rebuildBundles [ 'ansi-regex' ]
+1109 verbose unlock done using /home/john/.npm/_locks/ansi-regex-ef12bc21914ee82e.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+1110 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi
+1111 info build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi
+1112 verbose linkStuff [ true,
+1112 verbose linkStuff   '/usr/local/lib/node_modules',
+1112 verbose linkStuff   false,
+1112 verbose linkStuff   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules' ]
+1113 info linkStuff has-ansi@0.1.0
+1114 verbose linkBins has-ansi@0.1.0
+1115 verbose link bins [ { 'has-ansi': 'cli.js' },
+1115 verbose link bins   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/.bin',
+1115 verbose link bins   false ]
+1116 verbose linkMans has-ansi@0.1.0
+1117 verbose rebuildBundles has-ansi@0.1.0
+1118 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/.bin/strip-ansi
+1119 verbose rebuildBundles [ 'ansi-regex' ]
+1120 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/.bin/has-ansi
+1121 info install strip-ansi@0.3.0
+1122 info install has-ansi@0.1.0
+1123 info postinstall strip-ansi@0.3.0
+1124 info postinstall has-ansi@0.1.0
+1125 verbose unlock done using /home/john/.npm/_locks/strip-ansi-d1deeb560646b297.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/strip-ansi
+1126 verbose unlock done using /home/john/.npm/_locks/has-ansi-4b5eeb5eeaa46254.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk/node_modules/has-ansi
+1127 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+1128 info build /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+1129 verbose linkStuff [ true,
+1129 verbose linkStuff   '/usr/local/lib/node_modules',
+1129 verbose linkStuff   false,
+1129 verbose linkStuff   '/usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules' ]
+1130 info linkStuff chalk@0.5.1
+1131 verbose linkBins chalk@0.5.1
+1132 verbose linkMans chalk@0.5.1
+1133 verbose rebuildBundles chalk@0.5.1
+1134 verbose rebuildBundles [ '.bin',
+1134 verbose rebuildBundles   'ansi-styles',
+1134 verbose rebuildBundles   'escape-string-regexp',
+1134 verbose rebuildBundles   'has-ansi',
+1134 verbose rebuildBundles   'strip-ansi',
+1134 verbose rebuildBundles   'supports-color' ]
+1135 info install chalk@0.5.1
+1136 info postinstall chalk@0.5.1
+1137 verbose unlock done using /home/john/.npm/_locks/chalk-fd9259fbcfa7d1ad.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/chalk
+1138 verbose about to build /usr/local/lib/node_modules/grunt-contrib-imagemin
+1139 verbose unlock done using /home/john/.npm/_locks/grunt-contrib-imagemin-9efe377292e5480c.lock for /usr/local/lib/node_modules/grunt-contrib-imagemin
+1140 verbose stack Error: No compatible version found: vinyl-fs@'>=0.3.7 <0.4.0'
+1140 verbose stack Valid install targets:
+1140 verbose stack ["0.0.1","0.0.2","0.1.0"]
+1140 verbose stack
+1140 verbose stack     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:259:12)
+1140 verbose stack     at next (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:238:17)
+1140 verbose stack     at setData (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:215:5)
+1140 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+1140 verbose stack     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:17:25)
+1140 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:173:7)
+1140 verbose stack     at Object.oncomplete (fs.js:93:15)
+1141 verbose cwd /home/john/Dev/test-website
+1142 error Linux 3.13.0-37-generic
+1143 error argv "node" "/usr/local/bin/npm" "install" "-g" "grunt-contrib-imagemin" "--save-dev"
+1144 error node v0.13.0-pre
+1145 error npm  v2.5.0
+1146 error code ETARGET
+1147 error notarget No compatible version found: vinyl-fs@'>=0.3.7 <0.4.0'
+1147 error notarget Valid install targets:
+1147 error notarget ["0.0.1","0.0.2","0.1.0"]
+1147 error notarget
+1147 error notarget This is most likely not a problem with npm itself.
+1147 error notarget In most cases you or one of your dependencies are requesting
+1147 error notarget a package version that doesn't exist.
+1148 verbose exit [ 1, true ]
+1149 verbose unbuild lib/node_modules/grunt-contrib-imagemin/node_modules/imagemin
+1150 info preuninstall imagemin@3.1.0
+1151 info uninstall imagemin@3.1.0
+1152 verbose unbuild rmStuff imagemin@3.1.0 from /usr/local/lib/node_modules
+1153 verbose unbuild rmStuff in /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules
+1154 verbose gentlyRm verifying that /usr/local is managed by npm
+1155 silly isManaged /usr/local is not inside /usr/local/lib/node_modules
+1156 silly isManaged /usr/local is not inside /usr/local/lib/node_modules
+1157 silly isManaged /usr/local/bin is inside /usr/local
+1158 silly gentlyRm /usr/local is managed by npm
+1159 silly gentlyRm /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/.bin/imagemin is under /usr/local
+1160 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/.bin/imagemin up to /usr/local
+1161 info postuninstall imagemin@3.1.0
+1162 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/imagemin
+1163 silly gentlyRm purging /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules/imagemin
+1164 silly gentlyRm quitting because other entries in /usr/local/lib/node_modules/grunt-contrib-imagemin/node_modules
+1165 verbose unbuild lib/node_modules/grunt-contrib-imagemin
+1166 info preuninstall grunt-contrib-imagemin@0.9.2
+1167 info uninstall grunt-contrib-imagemin@0.9.2
+1168 verbose unbuild rmStuff grunt-contrib-imagemin@0.9.2 from /usr/local/lib/node_modules
+1169 info postuninstall grunt-contrib-imagemin@0.9.2
+1170 verbose gentlyRm vacuuming /usr/local/lib/node_modules/grunt-contrib-imagemin
+1171 silly gentlyRm purging /usr/local/lib/node_modules/grunt-contrib-imagemin
+1172 silly gentlyRm quitting because other entries in /usr/local/lib/node_modules

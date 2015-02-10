@@ -8,8 +8,7 @@
  *
  * Main module of the application.
  */
-angular
-  .module('testWebsiteApp', [
+angular.module('testWebsiteApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -27,13 +26,17 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
-      .when('/createpost', {
-        templateUrl: 'views/createpost.html',
-        controller: 'CreatePostCtrl'
-      })
       .when('/list_activity', {
         templateUrl: 'views/list_activity.html',
         controller: 'ListActivityCtrl'
+      })
+      .when('/prova', {
+        templateUrl: 'views/prova.html',
+        controller: 'ProvaCtrl'
+      })
+      .when('/create_post', {
+        templateUrl: 'views/create_post.html',
+        controller: 'CreatePostCtrl'
       })
       .otherwise({
         redirectTo: '/'

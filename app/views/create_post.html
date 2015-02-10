@@ -1,0 +1,21 @@
+<div class="container">
+    <h1> Post Creation</h1>
+</div>
+
+<form>
+    <fieldset>
+        <div class="container">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="form-group">
+                            <label for="nome">Title</label>
+                            <br>
+                            <form   ng-controller="CreatePostCtrl"  ng-submit="submitNEW()">
+  								<input type="text" ng-model="text" name="text" />
+  								<button ng-click='submitNEW()'> click</button>
+  								  <pre>list={{list}}</pre>
+							</form>
+                        </div>
+                    </div>
+                </div>
