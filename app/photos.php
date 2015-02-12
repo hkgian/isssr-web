@@ -1,0 +1,1 @@
+[ { "Name" : "Foto1", "URL" : "http://scrivania.altervista.org/sfondi/film-serie/jpg/ken-il-guerriero_1920x1080.jpg" }, { "Name" : "Foto2", "URL" : "http://www.drogbaster.it/immagini-3d/album/slides/immagini-tridimensionali%20%285%29.jpg" }, { "Name" : "Foto3", "URL" : "http://www.lultimaribattuta.it/wp-content/uploads/2014/05/lotito_1016093sportal_news.jpg" }]

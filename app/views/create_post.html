@@ -14,36 +14,79 @@
 								<form >
 									<div class="row">
 										Title
-										<br>
-										<input type="text" ng-model="title" name="text" />
-										<button type="button" class="btn btn-primary">Save</button>
+										<button type="button" class="btn btn-default btn" data-toggle="modal" data-target="#titleModal" ng-click="copyTo1()">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 
+										</button>
 
-									</div>
-									<div class="row">
-										Tale
-										<br>
-										<textarea ng-model="tale" placeholder="What's up?" ></textarea>
-										<button type="button" class="btn btn-primary">Save</button>
-									</div>
-									Photos
-									<div class="row">
-										<div class="col-sm-6 col-md-4">
-											<div class="thumbnail">
-												<img src="http://placehold.it/200x200" alt="..." >
-												<div class="caption">
-													<p>
-														<a href="#" class="btn btn-primary	" role="button">Delete</a>
-													</p>
+										<div class="modal fade" id="titleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														<h4 class="modal-title" id="myModalLabel">Save</h4>
+													</div>
+													<div class="modal-body">
+														Write the title of the post:
+														<input type="text" ng-model="title2" name="text" />
+													</div>
+
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														<button type="button" class="btn btn-primary" data-dismiss="modal" ng-click='copyFrom1()' > Save </button>
+													</div>
 												</div>
 											</div>
 										</div>
-										<div class="col-sm-6 col-md-4">
-											<div class="thumbnail">
-												<img src="http://placehold.it/200x200" alt="..." >
-												<div class="caption">
-													<p>
-														<a href="#" class="btn btn-primary	" role="button">Delete</a>
-													</p>
+									</div>
+									<p> 
+										{{title}}
+									</p>
+									<br>
+									<br>							
+									<div class="row">
+										Tale
+										<button type="button" class="btn btn-default btn" data-toggle="modal" data-target="#taleModal" ng-click="copyTo2()">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 
+										</button>
+
+										<div class="modal fade" id="taleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														<h4 class="modal-tale" id="myModalLabel">Save</h4>
+													</div>
+													<div class="modal-body">
+														Write the tale of the post:
+														<input type="text" ng-model="tale2" name="text" />
+													</div>
+
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														<button type="button" class="btn btn-primary" data-dismiss="modal" ng-click='copyFrom2()' > Save </button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<p> 
+										{{tale}}
+									</p>
+									<br>
+									<br>				
+									Photos
+
+									<div class="row">
+										<div ng-repeat="x in photos">
+											<div class="col-sm-6 col-md-3">
+												{{ x.Name }}
+												<div class="thumbnail">
+													<img ng-src= "{{ x.URL }}" alt="..." >
+													<div class="caption">
+														<p>
+															<a class="btn btn-primary	" role="button" ng-click  = "deletePhoto(x)">Delete</a>
+														</p>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -63,29 +106,20 @@
 												</div>
 												<div class="modal-body">
 													Insert the photo link here:
-
-													<input type="text" ng-model="title" name="text" />
+													<input type="text" ng-model="photo_link" name="text" />
 												</div>
 
 												<div class="modal-footer">
 													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-													<button type="button" class="btn btn-primary">Add photo</button>
+													<button type="button" class="btn btn-primary"  data-dismiss="modal" ng-click='addPhoto(photo_link)'>Add photo</button>
 												</div>
 											</div>
 										</div>
 									</div>
 									<br>
 									<br>
-									<br>
-									<br>
-									Tale
-									<br> 
-
-
 								</form>
 							</div>	
 						</div>
-						<button ng-click='submitNEW("title")'> click</button>
-						<pre>list={{list}}</pre>
 					</div>
 				</div>
