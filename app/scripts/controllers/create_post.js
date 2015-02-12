@@ -12,9 +12,10 @@ angular.module('testWebsiteApp')
    	$scope.list = [];
       var temp = {};
       $scope.text = 'hello';
-      $scope.submitNEW = function() { // va inviato ID_POST se è one to many l'ID dell'oggetto se non devo creare un ogetto 
+      $scope.submitNEW = function(stri) { // va inviato ID_POST se è one to many l'ID dell'oggetto se non devo creare un ogetto 
+        console.log(stri)
         if ($scope.text) {
-          temp['text1']=(this.text);
+          temp[stri]=(this.text);
           $scope.text = '';
         }
         $scope.list.push(temp);
