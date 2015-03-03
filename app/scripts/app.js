@@ -15,6 +15,7 @@ angular.module('testWebsiteApp', [
     'ngRoute',
     'ngSanitize',
     'ngTouch'
+    ,'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
