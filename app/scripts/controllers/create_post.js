@@ -10,6 +10,13 @@
  angular.module('testWebsiteApp')
  .controller('CreatePostCtrl', function ($scope, $http) {
 
+  
+  $http.get("http://localhost:9000/ItineraryDTO.json")
+   .success(function(response) {
+    console.log(response.path);
+    
+  });
+
    $http.get("http://localhost:9000/photos.php")
    .success(function(response) {$scope.photos = response;});
 
@@ -35,10 +42,16 @@
     var index= $scope.photos.indexOf(x)
       $scope.photos.splice(index,1);     
   }
-$scope.addPhoto = function(x){
+  $scope.addPhoto = function(x){
     console.log(x.toString());
     $scope.photos.push({"Name" : "lotito", "URL" : x.toString()})
   }
+  
+
+
+
+
+
 
 
 });

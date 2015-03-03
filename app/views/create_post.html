@@ -8,14 +8,13 @@
 			<div class="col-md-8">
 				<div class="row">
 					<div class="col-md-12 col-lg-12">
-						<div class="form-group">
 							<br>
 							<div class="container">
 								<form >
 									<div class="row">
-										Title
 										<button type="button" class="btn btn-default btn" data-toggle="modal" data-target="#titleModal" ng-click="copyTo1()">
-										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 
+											Title
+											<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 
 										</button>
 
 										<div class="modal fade" id="titleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -38,15 +37,19 @@
 											</div>
 										</div>
 									</div>
-									<p> 
-										{{title}}
-									</p>
+									<div class="container">
+										<div class="well">
+											<p> 
+												{{title}}
+											</p>
+										</div>
+									</div>
 									<br>
 									<br>							
 									<div class="row">
-										Tale
 										<button type="button" class="btn btn-default btn" data-toggle="modal" data-target="#taleModal" ng-click="copyTo2()">
-										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 
+											Tale
+											<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 
 										</button>
 
 										<div class="modal fade" id="taleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -69,9 +72,11 @@
 											</div>
 										</div>
 									</div>
-									<p> 
-										{{tale}}
-									</p>
+									<div class="well">
+										<p> 
+											{{tale}}
+										</p>
+									</div>
 									<br>
 									<br>				
 									Photos
@@ -120,6 +125,5 @@
 									<br>
 								</form>
 							</div>	
-						</div>
 					</div>
 				</div>
