@@ -1,0 +1,104 @@
+{
+    "budget": {
+        "minBudget": 0,
+        "averageExpectedBudget": 50.5,
+        "maxBudget": 100
+    },
+    "collaborators": [
+        {
+            "username": "Pierluigi",
+            "email": "pierluigi@gmail.com",
+            "password": "password"
+        },
+        {
+            "username": "Gianluca",
+            "email": "gianluca@gmail.com",
+            "password": "password"
+        }
+    ],
+    "minNumberOfParticipants": 1,
+    "name": "Viaggio a Roma",
+    "owner": {
+        "username": "Matteo",
+        "email": "matteo@gmail.com",
+        "password": "password"
+    },
+    "path": {"segments": [
+        {
+            "destinationItineraryItem": {
+                "visitSpecification": {
+                    "visitEffort": "tanto",
+                    "visitDateSpecification": {
+                        "month": 3,
+                        "year": 2015,
+                        "day": 10
+                    },
+                    "visitInside": false
+                },
+                "costSpecification": {
+                    "minBudget": 10,
+                    "averageExpectedBudget": 15,
+                    "maxBudget": 20
+                },
+                "eoi": {
+                    "coordinate": {
+                        "longitude": 12.492269,
+                        "latitude": 41.890169
+                    },
+                    "nome": "Colosseo"
+                }
+            },
+            "moveSpecification": {
+                "time": {
+                    "minute": 0,
+                    "hour": 14
+                },
+                "type": "Train",
+                "cost": {
+                    "minBudget": 3,
+                    "maxBudget": 9
+                }
+            }
+        },
+        {
+            "destinationItineraryItem": {
+                "visitSpecification": {
+                    "visitEffort": "Poco",
+                    "visitDateSpecification": {
+                        "month": 3,
+                        "year": 2015,
+                        "day": 10
+                    },
+                    "visitInside": false
+                },
+                "costSpecification": {
+                    "minBudget": 7,
+                    "averageExpectedBudget": 20,
+                    "maxBudget": 25
+                },
+                "eoi": {
+                    "coordinate": {
+                        "longitude": 12.482058,
+                        "latitude": 41.90595
+                    },
+                    "nome": "Piazza di Spagna"
+                }
+            },
+            "moveSpecification": {
+                "time": {
+                    "minute": 0,
+                    "hour": 14
+                },
+                "type": "By feet",
+                "cost": {
+                    "minBudget": 1,
+                    "maxBudget": 5
+                }
+            }
+        }
+    ]},
+    "maxNumberOfParticipants": 10,
+    "isPublic": true,
+    "public": true
+}
+

@@ -1,0 +1,41 @@
+{
+    "id": 1,
+    "version": 1,
+    "title": {
+        "id": 4,
+        "version": 1,
+        "data": null,
+        "postEntity": null,
+        "state": false
+    },
+    "postTale": {
+        "id": 3,
+        "version": 1,
+        "data": null,
+        "postEntity": null,
+        "state": false
+    },
+    "activity": {
+        "id": 2,
+        "version": 1
+    },
+    "photos": [],
+    "videos": [],
+    "steps": [{
+        "id": 5,
+        "version": 1,
+        "poiUrl": null,
+        "name": null,
+        "tale": null,
+        "state": false
+    }, {
+        "id": 6,
+        "version": 1,
+        "poiUrl": null,
+        "name": "spagna",
+        "tale": "Viva la barcaccia",
+        "state": false
+    }],
+    "comments": [],
+    "hidden": true
+}
