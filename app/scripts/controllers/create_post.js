@@ -8,86 +8,101 @@
  * Controller of the testWebsiteApp
  */
  angular.module('testWebsiteApp')
- .controller('CreatePostCtrl', function ($scope, $http, $modal, $log) {
-
-
-
+ .controller('CreatePostCtrl', function ($scope, $http, $modal, $log, growl) {
+  $scope.post={};
+  $scope.post.title='';
+  $scope.post.tale='';
+  $scope.post.videos=[];
 
   $http.get("http://localhost:9000/ItineraryDTO.json")
   .success(function(response) {
-    console.log(response.path);
+    $scope.itinerary=response;
   });
 
   $http.get("http://localhost:9000/photos.php")
-  .success(function(response) {$scope.photos = response;});
+  .success(function(response) {
+   $scope.post.photos= response;
+   $log.info('photos: '+ $scope.post.photos.toString() );
+ });
 
-  $scope.title = "";
-  $scope.title2 = "";
-
-   // tasto edit deve chiedere il lock
-   // se ottieni il lock ti si apre il modal
-   //quando clicco save devo mandare una post a /edittitle che ha come body:
-   //postId (Long), title (String), username (String).
-   $scope.openModalTitle = function() {
-    $log.info('minchione');
-    $http.post("/getlocktitle", { postId: 12, username: 'lotito'}).
+  $scope.openModalTitle = function() {
+    $http.post("/getlocktitle", { postId: 12, username: 'lotito'}). // da editare il lotito ovviamente....
     success(function(data, status, headers, config) {
     // this callback will be called asynchronously
     // when the response is available
 
+    if(data == 'true'){
+
+      var modalInstance = $modal.open({
+        templateUrl: 'titleModal',
+        controller: 'ModalInstanceCtrl',
+        resolve: {
+          modalT : function () {
+            return $scope.post.title;
+          }
+        }
+      });
+
+
+      modalInstance.result.then(function (selectedItem) {
+
+        console.log('selectedItem: '+selectedItem);
+        $scope.post.title = selectedItem;
+        $log.info($scope.post.title);
+
+      }, function () {
+        $log.info('Modal dismissed at: ' + new Date());
+      });
+
+    }
+    else{
+
+      growl.error("somebody else is editing this!", {title: 'BUSY AT THE MOMENT'});
+    }
+  }).
+    error(function(data, status, headers, config) {
+      growl.error("seems like you are offline!", {title: 'UNABLE TO CONTACT THE SERVER'});
+    });
+  };
+
+
+
+  $scope.openModalTale = function() {
+    $http.post("/getlocktale", { postId: 12, username: 'lotito'}). // da editare il lotito ovviamente....
+    success(function(data, status, headers, config) {
       if(data == 'true'){
 
         var modalInstance = $modal.open({
-          templateUrl: 'titleModal',
-          controller: 'ModalInstanceCtrl'
+          templateUrl: 'taleModal',
+          controller: 'ModalInstanceCtrl',
+          resolve: {
+            modalT : function () {
+              return $scope.post.tale;
+            }
+          }
         });
 
-
         modalInstance.result.then(function (selectedItem) {
-          console.log(selectedItem);
-          $scope.title = selectedItem;
+
+          console.log('selectedItem: '+selectedItem);
+          $scope.post.tale = selectedItem;
+          $log.info($scope.post.tale);
 
         }, function () {
           $log.info('Modal dismissed at: ' + new Date());
         });
-    
+
       }
       else{
 
-        // fai apparire una notifica
+        growl.error("somebody else is editing this!", {title: 'BUSY AT THE MOMENT'});
       }
-}).
+    }).
     error(function(data, status, headers, config) {
-    // called asynchronously if an error occurs
-    // or server returns response with an error status.
-  });
-
-
-
-    var modalInstance = $modal.open({
-      templateUrl: 'titleModal',
-      controller: 'ModalInstanceCtrl'
+      growl.error("seems like you are offline!", {title: 'UNABLE TO CONTACT THE SERVER'});
     });
-
-
-    modalInstance.result.then(function (selectedItem) {
-      console.log(selectedItem);
-      $scope.title = selectedItem;
-
-    }, function () {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
-
-    //$scope.title = $scope.title2;
   };
 
-
-
-
-
-  $scope.postTitle = function() {
-    $scope.title2 = $scope.title;
-  };
   $scope.tale = "";
   $scope.tale2 = "";
   $scope.copyFrom2 = function() {
@@ -99,12 +114,12 @@
 
   $scope.deletePhoto = function(x){
     console.log(x);
-    var index= $scope.photos.indexOf(x)
-    $scope.photos.splice(index,1);     
+    var index= $scope.post.photos.indexOf(x)
+    $scope.post.photos.splice(index,1);     
   }
   $scope.addPhoto = function(x){
     console.log(x.toString());
-    $scope.photos.push({"Name" : "lotito", "URL" : x.toString()})
+    $scope.post.photos.push({"Name" : "lotito", "URL" : x.toString()})
   }
   
 
@@ -118,10 +133,12 @@
 
 
 angular.module('testWebsiteApp')
-.controller('ModalInstanceCtrl', function ($scope, $modalInstance ) {
+.controller('ModalInstanceCtrl', function ($scope, $modalInstance, modalT ) {
+
+  $scope.a = modalT;
 
   $scope.ok = function () {
-    $modalInstance.close($scope.title2);
+    $modalInstance.close($scope.a);
   };
 
   $scope.cancel = function () {

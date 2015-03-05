@@ -14,8 +14,9 @@ angular.module('testWebsiteApp', [
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
-    ,'ui.bootstrap'
+    'ngTouch',
+    'ui.bootstrap',
+    'angular-growl'
   ])
   .config(function ($routeProvider) {
     $routeProvider

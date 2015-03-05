@@ -8,10 +8,7 @@
  * Controller of the testWebsiteApp
  */
 angular.module('testWebsiteApp')
-  .controller('ListActivityCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('ListActivityCtrl', function ($scope, $routeParams, $log) {
+  	$scope.userID = $routeParams.id;
+    $log.info('questi sono i route params: ' + $scope.userID);
   });
